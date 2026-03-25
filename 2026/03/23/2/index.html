@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+
+
+<html theme="light" showBanner="true" hasBanner="true" > 
+<link href="https://cdn.staticfile.org/font-awesome/6.4.2/css/fontawesome.min.css" rel="stylesheet">
+<link href="https://cdn.staticfile.org/font-awesome/6.4.2/css/brands.min.css" rel="stylesheet">
+<link href="https://cdn.staticfile.org/font-awesome/6.4.2/css/solid.min.css" rel="stylesheet">
+<script src="/js/color.global.min.js" ></script>
+<script src="/js/load-settings.js" ></script>
+<head>
+  <meta charset="utf-8">
+  
+  
+  
+
+  
+  <title>MacOS X 使用技巧 | Shizuku Blogs</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="preload" href="/css/fonts/Roboto-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+  <link rel="preload" href="/css/fonts/Roboto-Bold.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+
+  <meta name="description" content="给旧系统的iCal增加农历和节假日2002年7月17日，苹果发布了iCal日历软件，在Mac OS X Jaguar 10.2平台首发，后来成为10.3系统的一部分。而且Mac OS X 10.2.8和10.3.9最新可用iCal 1.5.5。但是早期版本的Mac OS X日历软件默认没有农历支持，也没有法定节假日提示。这需要自行导入或订阅日历才能解决。 农历日历可以在GitHub中找到infin">
+<meta property="og:type" content="article">
+<meta property="og:title" content="MacOS X 使用技巧">
+<meta property="og:url" content="http://example.com/2026/03/23/2/index.html">
+<meta property="og:site_name" content="Shizuku Blogs">
+<meta property="og:description" content="给旧系统的iCal增加农历和节假日2002年7月17日，苹果发布了iCal日历软件，在Mac OS X Jaguar 10.2平台首发，后来成为10.3系统的一部分。而且Mac OS X 10.2.8和10.3.9最新可用iCal 1.5.5。但是早期版本的Mac OS X日历软件默认没有农历支持，也没有法定节假日提示。这需要自行导入或订阅日历才能解决。 农历日历可以在GitHub中找到infin">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2026-03-23T15:59:27.000Z">
+<meta property="article:modified_time" content="2026-03-23T17:30:51.485Z">
+<meta property="article:author" content="Shizuku">
+<meta property="article:tag" content="MacOSX">
+<meta name="twitter:card" content="summary">
+  
+  
+    <link rel="shortcut icon" href="/img/1.ico">
+  
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+<meta name="generator" content="Hexo 8.1.1"></head>
+
+<body>
+  
+  
+    
+<div id="banner" class="">
+  <img src="https://haowallpaper.com/link/common/file/previewFileImg/16683117277924736" itemprop="image">
+  <div id="banner-dim"></div>
+</div>
+ 
+   
+  <div id="main-grid" class="  ">
+    <div id="nav" class=""  >
+      <navbar id="navbar">
+  <nav id="title-nav">
+    <a href="/">
+      <div id="vivia-logo">
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+      </div>
+      <div>Shizuku Blogs </div>
+    </a>
+  </nav>
+  <nav id="main-nav">
+    
+      <a class="main-nav-link" href="/">首页</a>
+    
+      <a class="main-nav-link" href="/archives">文章&amp;资源&amp;各种杂七杂八</a>
+    
+      <a class="main-nav-link" href="/about">关于</a>
+    
+  </nav>
+  <nav id="sub-nav">
+    <a id="theme-btn" class="nav-icon">
+      <span class="light-mode-icon"><svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 -960 960 960" width="20"><path d="M438.5-829.913v-48q0-17.452 11.963-29.476 11.964-12.024 29.326-12.024 17.363 0 29.537 12.024t12.174 29.476v48q0 17.452-11.963 29.476-11.964 12.024-29.326 12.024-17.363 0-29.537-12.024T438.5-829.913Zm0 747.826v-48q0-17.452 11.963-29.476 11.964-12.024 29.326-12.024 17.363 0 29.537 12.024t12.174 29.476v48q0 17.452-11.963 29.476-11.964 12.024-29.326 12.024-17.363 0-29.537-12.024T438.5-82.087ZM877.913-438.5h-48q-17.452 0-29.476-11.963-12.024-11.964-12.024-29.326 0-17.363 12.024-29.537t29.476-12.174h48q17.452 0 29.476 11.963 12.024 11.964 12.024 29.326 0 17.363-12.024 29.537T877.913-438.5Zm-747.826 0h-48q-17.452 0-29.476-11.963-12.024-11.964-12.024-29.326 0-17.363 12.024-29.537T82.087-521.5h48q17.452 0 29.476 11.963 12.024 11.964 12.024 29.326 0 17.363-12.024 29.537T130.087-438.5Zm660.174-290.87-34.239 32q-12.913 12.674-29.565 12.174-16.653-.5-29.327-13.174-12.674-12.673-12.554-28.826.12-16.152 12.794-28.826l33-35q12.913-12.674 30.454-12.674t30.163 12.847q12.709 12.846 12.328 30.826-.38 17.98-13.054 30.653ZM262.63-203.978l-32 34q-12.913 12.674-30.454 12.674t-30.163-12.847q-12.709-12.846-12.328-30.826.38-17.98 13.054-30.653l33.239-31q12.913-12.674 29.565-12.174 16.653.5 29.327 13.174 12.674 12.673 12.554 28.826-.12 16.152-12.794 28.826Zm466.74 33.239-32-33.239q-12.674-12.913-12.174-29.565.5-16.653 13.174-29.327 12.673-12.674 28.826-13.054 16.152-.38 28.826 12.294l35 33q12.674 12.913 12.674 30.454t-12.847 30.163q-12.846 12.709-30.826 12.328-17.98-.38-30.653-13.054ZM203.978-697.37l-34-33q-12.674-12.913-13.174-29.945-.5-17.033 12.174-29.707t31.326-13.293q18.653-.62 31.326 13.054l32 34.239q11.674 12.913 11.174 29.565-.5 16.653-13.174 29.327-12.673 12.674-28.826 12.554-16.152-.12-28.826-12.794ZM480-240q-100 0-170-70t-70-170q0-100 70-170t170-70q100 0 170 70t70 170q0 100-70 170t-170 70Zm-.247-82q65.703 0 111.475-46.272Q637-414.544 637-480.247t-45.525-111.228Q545.95-637 480.247-637t-111.475 45.525Q323-545.95 323-480.247t45.525 111.975Q414.05-322 479.753-322ZM481-481Z"/></svg></span>
+      <span class="dark-mode-icon"><svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 -960 960 960" width="20"><path d="M480.239-116.413q-152.63 0-258.228-105.478Q116.413-327.37 116.413-480q0-130.935 77.739-227.435t206.304-125.043q43.022-9.631 63.87 10.869t3.478 62.805q-8.891 22.043-14.315 44.463-5.424 22.42-5.424 46.689 0 91.694 64.326 155.879 64.325 64.186 156.218 64.186 24.369 0 46.978-4.946 22.609-4.945 44.413-14.076 42.826-17.369 62.967 1.142 20.142 18.511 10.511 61.054Q807.174-280 712.63-198.206q-94.543 81.793-232.391 81.793Zm0-95q79.783 0 143.337-40.217 63.554-40.218 95.793-108.283-15.608 4.044-31.097 5.326-15.49 1.283-31.859.805-123.706-4.066-210.777-90.539-87.071-86.473-91.614-212.092-.24-16.369.923-31.978 1.164-15.609 5.446-30.978-67.826 32.478-108.282 96.152Q211.652-559.543 211.652-480q0 111.929 78.329 190.258 78.329 78.329 190.258 78.329ZM466.13-465.891Z"/></svg></span>
+    </a>
+    
+    
+      <a id="cloud" class="nav-icon mobile-hide" target="_blank" rel="noopener" href="http://www.shizukuace.xyz:5244/" title="云盘">
+        <svg xmlns="http://www.w3.org/2000/svg" height="20"  width="20" viewBox="0 0 640 640"><!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M112 256C112 167.6 183.6 96 272 96C319.1 96 361.4 116.4 390.7 148.7C401.3 145.6 412.5 144 424 144C490.3 144 544 197.7 544 264C544 277.2 541.9 289.9 537.9 301.8C579.5 322.9 608 366.1 608 416C608 486.7 550.7 544 480 544L176 544C96.5 544 32 479.5 32 400C32 343.2 64.9 294.1 112.7 270.6C112.3 265.8 112 260.9 112 256zM272 144C210.1 144 160 194.1 160 256C160 264.4 160.9 272.6 162.7 280.5C165.4 292.6 158.4 304.8 146.6 308.6C107.9 321 80 357.3 80 400C80 453 123 496 176 496L480 496C524.2 496 560 460.2 560 416C560 378.6 534.3 347.1 499.5 338.4C492 336.5 485.9 331.2 483 324.1C480.1 317 480.9 308.9 485 302.4C492 291.3 496 278.2 496 264.1C496 224.3 463.8 192.1 424 192.1C412.9 192.1 402.5 194.6 393.2 199C382.7 204 370.1 200.7 363.4 191.2C343.1 162.6 309.7 144.1 272.1 144.1z"/></svg>
+      </a>
+    
+    <div id="nav-menu-btn" class="nav-icon">
+      <svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 -960 960 960" width="20"><path d="M177.37-252.282q-17.453 0-29.477-11.964-12.024-11.963-12.024-29.326t12.024-29.537q12.024-12.174 29.477-12.174h605.26q17.453 0 29.477 11.964 12.024 11.963 12.024 29.326t-12.024 29.537q-12.024 12.174-29.477 12.174H177.37Zm0-186.218q-17.453 0-29.477-11.963-12.024-11.964-12.024-29.326 0-17.363 12.024-29.537T177.37-521.5h605.26q17.453 0 29.477 11.963 12.024 11.964 12.024 29.326 0 17.363-12.024 29.537T782.63-438.5H177.37Zm0-186.217q-17.453 0-29.477-11.964-12.024-11.963-12.024-29.326t12.024-29.537q12.024-12.174 29.477-12.174h605.26q17.453 0 29.477 11.964 12.024 11.963 12.024 29.326t-12.024 29.537q-12.024 12.174-29.477 12.174H177.37Z"/></svg>
+    </div>
+  </nav>
+</navbar>
+<div id="nav-dropdown" class="hidden">
+  <div id="dropdown-link-list">
+    
+      <a class="nav-dropdown-link" href="/">首页</a>
+    
+      <a class="nav-dropdown-link" href="/archives">文章&amp;资源&amp;各种杂七杂八</a>
+    
+      <a class="nav-dropdown-link" href="/about">关于</a>
+    
+     
+    </div>
+</div>
+<script>
+  let dropdownBtn = document.getElementById("nav-menu-btn");
+  let dropdownEle = document.getElementById("nav-dropdown");
+  dropdownBtn.onclick = function() {
+    dropdownEle.classList.toggle("hidden");
+  }
+</script>
+    </div>
+    <div id="sidebar-wrapper">
+      <sidebar id="sidebar">
+  
+    <div class="widget-wrap">
+  <div class="info-card">
+    <div class="avatar">
+      
+        <image src=/img/avatar.jpg></image>
+      
+      <div class="img-dim"></div>
+    </div>
+    <div class="info">
+      <div class="username">Shizuku </div>
+      <div class="dot"></div>
+      <div class="subtitle">我这么美我不能死 </div>
+      <div class="link-list">
+        
+          <a class="link-btn" target="_blank" rel="noopener" href="https://x.com/mikumemz?s=21" title="X"><i class="fa-brands fa-x-twitter"></i></a>
+        
+          <a class="link-btn" target="_blank" rel="noopener" href="https://space.bilibili.com/3546558266084225?spm_id_from=333.337.0.0" title="BiliBili"><i class="fa-brands fa-bilibili"></i></a>
+        
+          <a class="link-btn" target="_blank" rel="noopener" href="https://qm.qq.com/q/GtzueUuGye" title="QQ"><i class="fa-brands fa-qq"></i></a>
+         
+      </div>  
+    </div>
+  </div>
+</div>
+
+  
+  <div class="sticky">
+    
+      
+
+
+  <div class="widget-wrap">
+    <div class="widget">
+      <h3 class="widget-title">分类</h3>
+      <div class="category-box">
+            <a class="category-link" href="/categories/%E8%B5%84%E6%BA%90/">
+                资源
+                <div class="category-count">8</div>
+            </a>
+        
+            <a class="category-link" href="/categories/%E6%97%A5%E8%AE%B0/">
+                日记
+                <div class="category-count">1</div>
+            </a>
+        </div>
+    </div>
+  </div>
+
+
+    
+      
+  <div class="widget-wrap">
+    <div class="widget">
+      <h3 class="widget-title">标签</h3>
+      <ul class="widget-tag-list" itemprop="keywords"><li class="widget-tag-list-item"><a class="widget-tag-list-link" href="/tags/Crossover/" rel="tag">Crossover</a></li><li class="widget-tag-list-item"><a class="widget-tag-list-link" href="/tags/MacOS/" rel="tag">MacOS</a></li><li class="widget-tag-list-item"><a class="widget-tag-list-link" href="/tags/MacOSX/" rel="tag">MacOSX</a></li><li class="widget-tag-list-item"><a class="widget-tag-list-link" href="/tags/PE/" rel="tag">PE</a></li><li class="widget-tag-list-item"><a class="widget-tag-list-link" href="/tags/VMware/" rel="tag">VMware</a></li><li class="widget-tag-list-item"><a class="widget-tag-list-link" href="/tags/Windows/" rel="tag">Windows</a></li><li class="widget-tag-list-item"><a class="widget-tag-list-link" href="/tags/Wine/" rel="tag">Wine</a></li><li class="widget-tag-list-item"><a class="widget-tag-list-link" href="/tags/iOS/" rel="tag">iOS</a></li><li class="widget-tag-list-item"><a class="widget-tag-list-link" href="/tags/iso/" rel="tag">iso</a></li><li class="widget-tag-list-item"><a class="widget-tag-list-link" href="/tags/%E6%9D%82/" rel="tag">杂</a></li><li class="widget-tag-list-item"><a class="widget-tag-list-link" href="/tags/%E7%A3%81%E7%9B%98/" rel="tag">磁盘</a></li><li class="widget-tag-list-item"><a class="widget-tag-list-link" href="/tags/%E8%8B%B9%E6%9E%9C/" rel="tag">苹果</a></li><li class="widget-tag-list-item"><a class="widget-tag-list-link" href="/tags/%E8%99%9A%E6%8B%9F%E6%9C%BA/" rel="tag">虚拟机</a></li><li class="widget-tag-list-item"><a class="widget-tag-list-link" href="/tags/%E8%B6%8A%E7%8B%B1/" rel="tag">越狱</a></li></ul>
+    </div>
+  </div>
+
+
+    
+      
+  <div class="widget-wrap">
+    <div class="widget">
+      <h3 class="widget-title">归档</h3>
+      
+      
+        <a class="archive-link" href="/archives/2026/03 ">
+          三月 2026 
+          <div class="archive-count">9 </div>
+        </a>
+      
+    </div>
+  </div>
+
+
+    
+      
+  <div class="widget-wrap">
+    <div class="widget">
+      <h3 class="widget-title">最新文章</h3>
+      <ul>
+        
+          <a class="recent-link" href="/2026/03/25/8/" title="DiskGenius：全能磁盘管理工具介绍" >
+            <div class="recent-link-text">
+              DiskGenius：全能磁盘管理工具介绍
+            </div>
+          </a>
+        
+          <a class="recent-link" href="/2026/03/24/7/" title="Crossover激活工具分享" >
+            <div class="recent-link-text">
+              Crossover激活工具分享
+            </div>
+          </a>
+        
+          <a class="recent-link" href="/2026/03/24/6/" title="VMware Workstation Pro 吾爱破解版" >
+            <div class="recent-link-text">
+              VMware Workstation Pro 吾爱破解版
+            </div>
+          </a>
+        
+          <a class="recent-link" href="/2026/03/24/5/" title="Parallels Desktop 26.1.1 虚拟机软件" >
+            <div class="recent-link-text">
+              Parallels Desktop 26.1.1 虚拟机软件
+            </div>
+          </a>
+        
+          <a class="recent-link" href="/2026/03/24/4/" title="PE系统工具大全" >
+            <div class="recent-link-text">
+              PE系统工具大全
+            </div>
+          </a>
+        
+      </ul>
+    </div>
+  </div>
+
+    
+  </div>
+</sidebar>
+    </div>
+    <div id="content-body">
+       
+
+
+<article id="post-2" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  
+    
+   
+  <div class="article-inner">
+    <div class="article-main">
+      <header class="article-header">
+        
+<div class="main-title-bar">
+  <div class="main-title-dot"></div>
+  
+    
+      <h1 class="p-name article-title" itemprop="headline name">
+        MacOS X 使用技巧
+      </h1>
+    
+  
+</div>
+
+        <div class='meta-info-bar'>
+          <div class="meta-info">
+  <time class="dt-published" datetime="2026-03-23T15:59:27.000Z" itemprop="datePublished">2026-03-23</time>
+</div>
+          <div class="need-seperator meta-info">
+            <div class="meta-cate-flex">
+  
+  <a class="meta-cate-link" href="/categories/%E8%B5%84%E6%BA%90/">资源</a>
+   
+</div>
+  
+          </div>
+          <div class="wordcount need-seperator meta-info">
+            3.6k 词 
+          </div>
+        </div>
+        
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/MacOSX/" rel="tag">MacOSX</a></li></ul>
+
+      </header>
+      <div class="e-content article-entry" itemprop="articleBody">
+        
+          <p>给旧系统的iCal增加农历和节假日<br>2002年7月17日，苹果发布了iCal日历软件，在Mac OS X Jaguar 10.2平台首发，后来成为10.3系统的一部分。而且Mac OS X 10.2.8和10.3.9最新可用iCal 1.5.5。但是早期版本的Mac OS X日历软件默认没有农历支持，也没有法定节假日提示。这需要自行导入或订阅日历才能解决。</p>
+<p>农历日历可以在GitHub中找到infinet&#x2F;lunar-calendar项，导入仓库中的ics文件。导入时建议选择新建日历，而不是合并到默认的家庭或工作日历中。</p>
+<p>节假日日历，在新版macOS中是默认订阅苹果官方日历的。例如中国大陆节假日的订阅地址是：<a target="_blank" rel="noopener" href="https://calendars.icloud.com/holidays/cn_zh.ics/">https://calendars.icloud.com/holidays/cn_zh.ics/</a><br>如果旧版本iCal不支持订阅日历，可以下载下来手动导入。</p>
+<p>除了这些，也可以自行订阅一些公共日历，例如天文日历等等。</p>
+<p>iCal在Mac OS X 10.5及以后的版本中，Dock图标会自动显示当天的日期，而更早版本的Mac则默认显示Jul 17，即iCal发布的日期。如果在10.2-10.4系统的Dock图标中iCal显示当天日期，可以在“系统预置”中找到“帐户”设置，再找到“启动项目”（10.2系统中的启动项目直接在系统预置的主页），在列表添加iCal，再钩选名称前面的“隐藏”，这样每次登录后就会在后台运行iCal，让Dock的日历图标显示当前系统日期了。</p>
+<p>虽然早期版本iCal并不太符合国人的使用习惯，但至少有了这些日历订阅和技巧，我们可以实现部分新版macOS日历app的功能。这也算是“削足适履”适应早期Mac OS X吧。</p>
+<hr>
+<p>手动获取Mac OS X更新包<br>Mac OS X的在线更新，目前至少需要Mac OS X Tiger 10.4，更早的版本已经无法获得更新了。虽然在线更新比较方便，但有时候也会需要获得更新的安装包供离线使用的情况。</p>
+<p>如果需要手动获得更新包，可以参看“Mac OS X操作系统”页面，找到相应的版本就能找到更新了，当然有些版本只列举了一部分。<br>苹果官方也对不同版本的系统开了相应的下载页面：<br>1, 10–10.5 <a target="_blank" rel="noopener" href="https://support.apple.com/en-hk/docs/mac/pl120">Click</a><br>2，SnowLeopard 10.6<a target="_blank" rel="noopener" href="https://support.apple.com/zh-cn/docs/mac/132617">Click</a><br>3, Lion 10.7<a target="_blank" rel="noopener" href="https://support.apple.com/zh-cn/docs/mac/133333">Click</a><br>4, Mountain Lion 10.8<a target="_blank" rel="noopener" href="https://support.apple.com/zh-cn/docs/mac/133741">Click</a><br>5, Mavericks 10.9<a target="_blank" rel="noopener" href="https://support.apple.com/zh-cn/docs/mac/134327">Click</a><br>也可以查看苹果CDN资源页面的索引文件，里面分了不同系统版本的索引，找到相应的版本下载下来，用文本编辑器查看即可（文件好像是XML格式的）。传送门：Software Update - The Apple Wiki<a target="_blank" rel="noopener" href="https://theapplewiki.com/wiki/Software_Update">Clickhere</a>。这个页面中虽然列出了早期10.0-10.3的链接，但实际上还是无法使用的.</p>
+<p>——————————————————————————————————————————————————————————————————————————————<br>在不支持的G4机型上安装Mac OS X Leopard 10.5<br>Mac OS X Leopard 10.5系统要求至少867MHz以上的PowerPC G4处理器，但实际上只要是G4处理器的Mac就能运行。但是在G3机型上是无法启动10.5安装盘的，因为10.5系统的二进制文件在编译时使用了AltiVec指令集，这一指令集需要G4、G5才支持。 配备G4处理器的机型可以启动10.5的安装盘，但10.5安装器脚本添加了867MHz限制，如果是低于867MHz的机型则无法安装。</p>
+<p>要在这些不受支持的G4机型上安装Leopard 10.5，有两种思路——修改安装器脚本和通过OpenFirmware命令修改本机处理器频率信息。</p>
+<p>第一种思路，修改安装器脚本。具体修改方法可以参考MacRumors上的帖子：Guide: Install Leopard on unsupported Macs<a target="_blank" rel="noopener" href="https://forums.macrumors.com/threads/guide-install-leopard-on-unsupported-macs.371302/">Clickhere</a>。当然也可以使用已经改好的安装盘镜像，如网盘链接<a target="_blank" rel="noopener" href="https://pan.baidu.com/share/init?surl=nNLkFCbt_QJLv3KiqEUMlA&pwd=mach">Click</a>中的Mac OS X 10.5 Lite.cdr镜像。</p>
+<p>第二种思路，则需要输入OpenFirmware命令来进行。开机按住Command-Option-O-F键进入OpenFirmware，然后插入安装光盘。通过输入命令来改变处理器频率信息，这并不是超频，只是改信息。</p>
+<p>单CPU的机型，输入以下命令：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">dev /cpus/PowerPC,G4@0</span><br><span class="line">d# 867000000 encode-int <span class="string">&quot; clock-frequency&quot;</span> property</span><br><span class="line">boot <span class="built_in">cd</span>:,\\:tbxi</span><br></pre></td></tr></table></figure>
+<p>双CPU的系统，输入以下命令：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line">dev /cpus/PowerPC,G4@0</span><br><span class="line">d# 867000000 encode-int <span class="string">&quot; clock-frequency&quot;</span> property dev /cpus/PowerPC,G4@1</span><br><span class="line">d# 867000000 encode-int <span class="string">&quot; clock-frequency&quot;</span> property</span><br><span class="line">boot <span class="built_in">cd</span>:,\\:tbxi</span><br></pre></td></tr></table></figure>
+<p>输入完成后会从安装光盘启动，继续完成安装即可。如果不想通过输入命令来操作，也可以先安装旧版Mac OS X，用Leopard Assistant来帮你修改nvram参数。</p>
+<p>安装完毕之后，一些ATI Rage显卡的机型可能没有图形加速。可以安装这个补丁来恢复支持。<br>完整教程可参考：Leopard for unsupported Macs - installation and setup guide.pdf<a target="_blank" rel="noopener" href="https://forums.macrumors.com/attachments/leopard-for-unsupported-macs-installation-and-setup-guide-pdf.686245/?__cf_chl_rt_tk=5QDGcTlvRr1lD7Eml2..8s_XshgOx2vYqwWHqymItw8-1774284346-1.0.1.1-Q1mEZP7qtsDO_HsgsH9u7X4u7NrnWJfN8I3Xa35OuKM">Clickhere</a></p>
+<p>————————————————————————————————————————————————————————————————————————<br>在不受支持的机型上安装Mac OS X 10.0-10.4<br>Mac OS X 10.0-10.4要求至少G3处理器，但其实在G3之前的机型上也可以安装，当然，这需要借助XPostFacto。XPostFacto现在对于个人用户来说已经免费了，可以在Other World Computing的网站找到。</p>
+<p>XPostFacto需要运行在Mac OS 9.x上。它支持Power Macintosh 7300-9600、PowerBook 2400&#x2F;3400等603、604 CPU的电脑安装Mac OS X 10.0-10.2（10.3和10.4需要升级G3或G4处理器），让初代iMac、iBook、Wallstreet G3等不支持的机型安装Mac OS X 10.3和10.4。</p>
+<p>XPostFacto下载和文档（英文）：Other World Computing’s XPostFacto 4<a target="_blank" rel="noopener" href="https://eshop.macsales.com/OSXCenter/XPostFacto/Framework.cfm?page=XPostFacto3.html">click</a></p>
+<p>—————————————————————————————————————————————————————————————————————————<br>在不受支持的Mac上安装OS X 10.8-10.11<br>OS X 10.8开始陆续淘汰旧Mac，基本上要求2007年中到2008年的Mac才支持，但也有一些大冤种的Mac设备（如2008年初代MacBook Air）无缘Mountain Lion。而从10.8开始到10.11，苹果并没有提高要求，原生支持10.8的机型基本都支持10.11。</p>
+<p>苹果在Mountain Lion淘汰的旧机型主要有两类：一类是采用Intel GMA集成显卡的机型，另一类是32位UEFI的设备。Intel GMA950和X3100显卡在Lion 10.7上已经非常卡了，从Launchpad的动画中就能看出，而初代Air大冤种就采用了GMA X3100显卡。第二类是历史原因导致的，2006年初的Mac因为采用了32位Core Duo处理器，其EFI固件也是32位。32位EFI的Mac即使是配备了64位处理器也最高运行到Lion系统，这代系统还有32位内核和内核扩展，上层的架构则都是64位。但2006年末的Mac基本都配备了64位Core 2处理器，苹果却还是提供32位EFI，这让纯64位内核的OS X 10.8无法运行。直到2007年中的Mac才适配64位EFI。</p>
+<p>如果要在这些不受支持的机型上运行OS X 10.8，32位机型需要先升级64位，内存至少升级到2GB。然后使用MacPostFactor软件进行安装。虽然MacPostFactor能安装上10.8-10.11系统，但一些机型可能没有显卡和无线驱动。而另一款软件，NeXPostFacto，可以让Intel GMA显卡和ATI X1300&#x2F;1600&#x2F;1900的机型安装10.8系统并获得显卡驱动，让ATI X1300&#x2F;1600&#x2F;1900的机型安装10.9并有显卡驱动。</p>
+<p>苹果在10.12系统之后继续淘汰旧机型，比如10.12需要支持SSE4的CPU（45nm Core 2），Mojave要求支持Metal的显卡等等，这些就不在这里介绍了。</p>
+
+        
+      </div>
+
+         
+    </div>
+    
+     
+  </div>
+  
+    
+<nav id="article-nav">
+  <a class="article-nav-btn left "
+    
+      href="/2026/03/24/3/"
+      title="U盘越狱工具checkn1x更新发布1.1.7，支持iOS14.7 Beta版"
+     >
+    <i class="fa-solid fa-angle-left"></i>
+    <p class="title-text">
+      
+        U盘越狱工具checkn1x更新发布1.1.7，支持iOS14.7 Beta版
+        
+    </p>
+  </a>
+  <a class="article-nav-btn right "
+    
+      href="/2026/03/23/1/"
+      title="欢迎使用私人云盘"
+     >
+
+    <p class="title-text">
+      
+        欢迎使用私人云盘
+        
+    </p>
+    <i class="fa-solid fa-angle-right"></i>
+  </a>
+</nav>
+
+
+  
+</article>
+
+
+
+
+  <script src="https://cdn.staticfile.org/twikoo/1.6.26/twikoo.all.min.js"></script>
+  <div id="comment-card" class="comment-card">
+    <div class="main-title-bar">
+      <div class="main-title-dot"></div>
+      <div class="main-title">留言 </div>
+    </div>
+    <div id="tcomment"></div>
+  </div>
+  <script>
+      twikoo.init({
+          envId: 'http://www.shizukuace.xyz:8081',
+          el: '#tcomment',
+          region: '',
+          path: 'location.pathname',
+          lang: 'zh-CN',
+      })
+  </script>
+  
+
+
+    </div>
+    <div id="footer-wrapper">
+      <footer id="footer">
+  
+  <div id="footer-info" class="inner">
+    
+    &copy; 2026 Shizuku<br>
+    Powered by <a href="https://hexo.io/" target="_blank">Hexo</a> & Theme <a target="_blank" rel="noopener" href="https://github.com/saicaca/hexo-theme-vivia">Vivia</a>
+  </div>
+</footer>
+
+    </div>
+    <div class="back-to-top-wrapper">
+    <button id="back-to-top-btn" class="back-to-top-btn hide" onclick="topFunction()">
+        <i class="fa-solid fa-angle-up"></i>
+    </button>
+</div>
+
+<script>
+    function topFunction() {
+        window.scroll({ top: 0, behavior: 'smooth' });
+    }
+    let btn = document.getElementById('back-to-top-btn');
+    function scrollFunction() {
+        if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
+            btn.classList.remove('hide')
+        } else {
+            btn.classList.add('hide')
+        }
+    }
+    window.onscroll = function() {
+        scrollFunction();
+    }
+</script>
+
+  </div>
+  <script src="/js/light-dark-switch.js"></script>
+</body>
+</html>
