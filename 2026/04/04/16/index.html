@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+
+
+<html theme="light" showBanner="true" hasBanner="true" > 
+<link href="https://cdn.staticfile.org/font-awesome/6.4.2/css/fontawesome.min.css" rel="stylesheet">
+<link href="https://cdn.staticfile.org/font-awesome/6.4.2/css/brands.min.css" rel="stylesheet">
+<link href="https://cdn.staticfile.org/font-awesome/6.4.2/css/solid.min.css" rel="stylesheet">
+<script src="/js/color.global.min.js" ></script>
+<script src="/js/load-settings.js" ></script>
+<head>
+  <meta charset="utf-8">
+  
+  
+  
+
+  
+  <title>联想 S8 A7600 / A7600M 黄金斗士刷机指南： | Shizuku Blogs</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="preload" href="/css/fonts/Roboto-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+  <link rel="preload" href="/css/fonts/Roboto-Bold.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+
+  <meta name="description" content="中文翻译重制：来自XDA大神XxpikaachuuxX Jun 22, 2015  注意：本教程仅适用于联想 S8 A7600(M) 手机！ 还有一款平板电脑也叫这个名称，不要混淆。 警告：您的保修期将失效。我不对任何砖机或软件故障负责！仅适用于 MTK6752 ！且不适用于同型号的平板电脑。本指南适用于联想 S8 7600 金色战士,是一款不错的手机，拥有相当不错的规格。我能找到的唯一缺点是它缺">
+<meta property="og:type" content="article">
+<meta property="og:title" content="联想 S8 A7600 &#x2F; A7600M 黄金斗士刷机指南：">
+<meta property="og:url" content="http://example.com/2026/04/04/16/index.html">
+<meta property="og:site_name" content="Shizuku Blogs">
+<meta property="og:description" content="中文翻译重制：来自XDA大神XxpikaachuuxX Jun 22, 2015  注意：本教程仅适用于联想 S8 A7600(M) 手机！ 还有一款平板电脑也叫这个名称，不要混淆。 警告：您的保修期将失效。我不对任何砖机或软件故障负责！仅适用于 MTK6752 ！且不适用于同型号的平板电脑。本指南适用于联想 S8 7600 金色战士,是一款不错的手机，拥有相当不错的规格。我能找到的唯一缺点是它缺">
+<meta property="og:locale" content="zh_CN">
+<meta property="article:published_time" content="2026-04-04T11:50:16.000Z">
+<meta property="article:modified_time" content="2026-04-04T12:15:00.402Z">
+<meta property="article:author" content="Shizuku">
+<meta property="article:tag" content="Android">
+<meta property="article:tag" content="XDA">
+<meta name="twitter:card" content="summary">
+  
+  
+    <link rel="shortcut icon" href="/img/1.ico">
+  
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+<meta name="generator" content="Hexo 8.1.1"></head>
+
+<body>
+  
+  
+    
+<div id="banner" class="">
+  <img src="https://haowallpaper.com/link/common/file/previewFileImg/16683117277924736" itemprop="image">
+  <div id="banner-dim"></div>
+</div>
+ 
+   
+  <div id="main-grid" class="  ">
+    <div id="nav" class=""  >
+      <navbar id="navbar">
+  <nav id="title-nav">
+    <a href="/">
+      <div id="vivia-logo">
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+      </div>
+      <div>Shizuku Blogs </div>
+    </a>
+  </nav>
+  <nav id="main-nav">
+    
+      <a class="main-nav-link" href="/">首页</a>
+    
+      <a class="main-nav-link" href="/archives">文章&amp;资源&amp;各种杂七杂八</a>
+    
+      <a class="main-nav-link" href="/about">关于</a>
+    
+  </nav>
+  <nav id="sub-nav">
+    <a id="theme-btn" class="nav-icon">
+      <span class="light-mode-icon"><svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 -960 960 960" width="20"><path d="M438.5-829.913v-48q0-17.452 11.963-29.476 11.964-12.024 29.326-12.024 17.363 0 29.537 12.024t12.174 29.476v48q0 17.452-11.963 29.476-11.964 12.024-29.326 12.024-17.363 0-29.537-12.024T438.5-829.913Zm0 747.826v-48q0-17.452 11.963-29.476 11.964-12.024 29.326-12.024 17.363 0 29.537 12.024t12.174 29.476v48q0 17.452-11.963 29.476-11.964 12.024-29.326 12.024-17.363 0-29.537-12.024T438.5-82.087ZM877.913-438.5h-48q-17.452 0-29.476-11.963-12.024-11.964-12.024-29.326 0-17.363 12.024-29.537t29.476-12.174h48q17.452 0 29.476 11.963 12.024 11.964 12.024 29.326 0 17.363-12.024 29.537T877.913-438.5Zm-747.826 0h-48q-17.452 0-29.476-11.963-12.024-11.964-12.024-29.326 0-17.363 12.024-29.537T82.087-521.5h48q17.452 0 29.476 11.963 12.024 11.964 12.024 29.326 0 17.363-12.024 29.537T130.087-438.5Zm660.174-290.87-34.239 32q-12.913 12.674-29.565 12.174-16.653-.5-29.327-13.174-12.674-12.673-12.554-28.826.12-16.152 12.794-28.826l33-35q12.913-12.674 30.454-12.674t30.163 12.847q12.709 12.846 12.328 30.826-.38 17.98-13.054 30.653ZM262.63-203.978l-32 34q-12.913 12.674-30.454 12.674t-30.163-12.847q-12.709-12.846-12.328-30.826.38-17.98 13.054-30.653l33.239-31q12.913-12.674 29.565-12.174 16.653.5 29.327 13.174 12.674 12.673 12.554 28.826-.12 16.152-12.794 28.826Zm466.74 33.239-32-33.239q-12.674-12.913-12.174-29.565.5-16.653 13.174-29.327 12.673-12.674 28.826-13.054 16.152-.38 28.826 12.294l35 33q12.674 12.913 12.674 30.454t-12.847 30.163q-12.846 12.709-30.826 12.328-17.98-.38-30.653-13.054ZM203.978-697.37l-34-33q-12.674-12.913-13.174-29.945-.5-17.033 12.174-29.707t31.326-13.293q18.653-.62 31.326 13.054l32 34.239q11.674 12.913 11.174 29.565-.5 16.653-13.174 29.327-12.673 12.674-28.826 12.554-16.152-.12-28.826-12.794ZM480-240q-100 0-170-70t-70-170q0-100 70-170t170-70q100 0 170 70t70 170q0 100-70 170t-170 70Zm-.247-82q65.703 0 111.475-46.272Q637-414.544 637-480.247t-45.525-111.228Q545.95-637 480.247-637t-111.475 45.525Q323-545.95 323-480.247t45.525 111.975Q414.05-322 479.753-322ZM481-481Z"/></svg></span>
+      <span class="dark-mode-icon"><svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 -960 960 960" width="20"><path d="M480.239-116.413q-152.63 0-258.228-105.478Q116.413-327.37 116.413-480q0-130.935 77.739-227.435t206.304-125.043q43.022-9.631 63.87 10.869t3.478 62.805q-8.891 22.043-14.315 44.463-5.424 22.42-5.424 46.689 0 91.694 64.326 155.879 64.325 64.186 156.218 64.186 24.369 0 46.978-4.946 22.609-4.945 44.413-14.076 42.826-17.369 62.967 1.142 20.142 18.511 10.511 61.054Q807.174-280 712.63-198.206q-94.543 81.793-232.391 81.793Zm0-95q79.783 0 143.337-40.217 63.554-40.218 95.793-108.283-15.608 4.044-31.097 5.326-15.49 1.283-31.859.805-123.706-4.066-210.777-90.539-87.071-86.473-91.614-212.092-.24-16.369.923-31.978 1.164-15.609 5.446-30.978-67.826 32.478-108.282 96.152Q211.652-559.543 211.652-480q0 111.929 78.329 190.258 78.329 78.329 190.258 78.329ZM466.13-465.891Z"/></svg></span>
+    </a>
+    
+    
+      <a id="cloud" class="nav-icon mobile-hide" target="_blank" rel="noopener" href="http://www.shizukuace.xyz:5244/" title="云盘">
+        <svg xmlns="http://www.w3.org/2000/svg" height="20"  width="20" viewBox="0 0 640 640"><!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M112 256C112 167.6 183.6 96 272 96C319.1 96 361.4 116.4 390.7 148.7C401.3 145.6 412.5 144 424 144C490.3 144 544 197.7 544 264C544 277.2 541.9 289.9 537.9 301.8C579.5 322.9 608 366.1 608 416C608 486.7 550.7 544 480 544L176 544C96.5 544 32 479.5 32 400C32 343.2 64.9 294.1 112.7 270.6C112.3 265.8 112 260.9 112 256zM272 144C210.1 144 160 194.1 160 256C160 264.4 160.9 272.6 162.7 280.5C165.4 292.6 158.4 304.8 146.6 308.6C107.9 321 80 357.3 80 400C80 453 123 496 176 496L480 496C524.2 496 560 460.2 560 416C560 378.6 534.3 347.1 499.5 338.4C492 336.5 485.9 331.2 483 324.1C480.1 317 480.9 308.9 485 302.4C492 291.3 496 278.2 496 264.1C496 224.3 463.8 192.1 424 192.1C412.9 192.1 402.5 194.6 393.2 199C382.7 204 370.1 200.7 363.4 191.2C343.1 162.6 309.7 144.1 272.1 144.1z"/></svg>
+      </a>
+    
+    <div id="nav-menu-btn" class="nav-icon">
+      <svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 -960 960 960" width="20"><path d="M177.37-252.282q-17.453 0-29.477-11.964-12.024-11.963-12.024-29.326t12.024-29.537q12.024-12.174 29.477-12.174h605.26q17.453 0 29.477 11.964 12.024 11.963 12.024 29.326t-12.024 29.537q-12.024 12.174-29.477 12.174H177.37Zm0-186.218q-17.453 0-29.477-11.963-12.024-11.964-12.024-29.326 0-17.363 12.024-29.537T177.37-521.5h605.26q17.453 0 29.477 11.963 12.024 11.964 12.024 29.326 0 17.363-12.024 29.537T782.63-438.5H177.37Zm0-186.217q-17.453 0-29.477-11.964-12.024-11.963-12.024-29.326t12.024-29.537q12.024-12.174 29.477-12.174h605.26q17.453 0 29.477 11.964 12.024 11.963 12.024 29.326t-12.024 29.537q-12.024 12.174-29.477 12.174H177.37Z"/></svg>
+    </div>
+  </nav>
+</navbar>
+<div id="nav-dropdown" class="hidden">
+  <div id="dropdown-link-list">
+    
+      <a class="nav-dropdown-link" href="/">首页</a>
+    
+      <a class="nav-dropdown-link" href="/archives">文章&amp;资源&amp;各种杂七杂八</a>
+    
+      <a class="nav-dropdown-link" href="/about">关于</a>
+    
+     
+    </div>
+</div>
+<script>
+  let dropdownBtn = document.getElementById("nav-menu-btn");
+  let dropdownEle = document.getElementById("nav-dropdown");
+  dropdownBtn.onclick = function() {
+    dropdownEle.classList.toggle("hidden");
+  }
+</script>
+    </div>
+    <div id="sidebar-wrapper">
+      <sidebar id="sidebar">
+  
+    <div class="widget-wrap">
+  <div class="info-card">
+    <div class="avatar">
+      
+        <image src=/img/avatar.jpg></image>
+      
+      <div class="img-dim"></div>
+    </div>
+    <div class="info">
+      <div class="username">Shizuku </div>
+      <div class="dot"></div>
+      <div class="subtitle">我这么美我不能死 </div>
+      <div class="link-list">
+        
+          <a class="link-btn" target="_blank" rel="noopener" href="https://x.com/mikumemz?s=21" title="X"><i class="fa-brands fa-x-twitter"></i></a>
+        
+          <a class="link-btn" target="_blank" rel="noopener" href="https://space.bilibili.com/3546558266084225?spm_id_from=333.337.0.0" title="BiliBili"><i class="fa-brands fa-bilibili"></i></a>
+        
+          <a class="link-btn" target="_blank" rel="noopener" href="https://qm.qq.com/q/GtzueUuGye" title="QQ"><i class="fa-brands fa-qq"></i></a>
+         
+      </div>  
+    </div>
+  </div>
+</div>
+
+  
+  <div class="sticky">
+    
+      
+
+
+  <div class="widget-wrap">
+    <div class="widget">
+      <h3 class="widget-title">分类</h3>
+      <div class="category-box">
+            <a class="category-link" href="/categories/%E8%B5%84%E6%BA%90/">
+                资源
+                <div class="category-count">13</div>
+            </a>
+        
+            <a class="category-link" href="/categories/%E6%8A%80%E6%9C%AF/">
+                技术
+                <div class="category-count">4</div>
+            </a>
+        
+            <a class="category-link" href="/categories/%E6%97%A5%E8%AE%B0/">
+                日记
+                <div class="category-count">1</div>
+            </a>
+        </div>
+    </div>
+  </div>
+
+
+    
+      
+  <div class="widget-wrap">
+    <div class="widget">
+      <h3 class="widget-title">标签</h3>
+      <ul class="widget-tag-list" itemprop="keywords"><li class="widget-tag-list-item"><a class="widget-tag-list-link" href="/tags/Android/" rel="tag">Android</a></li><li class="widget-tag-list-item"><a class="widget-tag-list-link" href="/tags/Crossover/" rel="tag">Crossover</a></li><li class="widget-tag-list-item"><a class="widget-tag-list-link" href="/tags/Linux/" rel="tag">Linux</a></li><li class="widget-tag-list-item"><a class="widget-tag-list-link" href="/tags/MacOS/" rel="tag">MacOS</a></li><li class="widget-tag-list-item"><a class="widget-tag-list-link" href="/tags/MacOSX/" rel="tag">MacOSX</a></li><li class="widget-tag-list-item"><a class="widget-tag-list-link" href="/tags/Microsoft/" rel="tag">Microsoft</a></li><li class="widget-tag-list-item"><a class="widget-tag-list-link" href="/tags/PE/" rel="tag">PE</a></li><li class="widget-tag-list-item"><a class="widget-tag-list-link" href="/tags/Tools/" rel="tag">Tools</a></li><li class="widget-tag-list-item"><a class="widget-tag-list-link" href="/tags/VMware/" rel="tag">VMware</a></li><li class="widget-tag-list-item"><a class="widget-tag-list-link" href="/tags/Windows/" rel="tag">Windows</a></li><li class="widget-tag-list-item"><a class="widget-tag-list-link" href="/tags/Wine/" rel="tag">Wine</a></li><li class="widget-tag-list-item"><a class="widget-tag-list-link" href="/tags/XDA/" rel="tag">XDA</a></li><li class="widget-tag-list-item"><a class="widget-tag-list-link" href="/tags/Xiaomi/" rel="tag">Xiaomi</a></li><li class="widget-tag-list-item"><a class="widget-tag-list-link" href="/tags/bash/" rel="tag">bash</a></li><li class="widget-tag-list-item"><a class="widget-tag-list-link" href="/tags/iOS/" rel="tag">iOS</a></li><li class="widget-tag-list-item"><a class="widget-tag-list-link" href="/tags/iso/" rel="tag">iso</a></li><li class="widget-tag-list-item"><a class="widget-tag-list-link" href="/tags/miPad/" rel="tag">miPad</a></li><li class="widget-tag-list-item"><a class="widget-tag-list-link" href="/tags/%E5%B7%A5%E5%85%B7/" rel="tag">工具</a></li><li class="widget-tag-list-item"><a class="widget-tag-list-link" href="/tags/%E6%95%99%E7%A8%8B/" rel="tag">教程</a></li><li class="widget-tag-list-item"><a class="widget-tag-list-link" href="/tags/%E6%9D%82/" rel="tag">杂</a></li><li class="widget-tag-list-item"><a class="widget-tag-list-link" href="/tags/%E7%A3%81%E7%9B%98/" rel="tag">磁盘</a></li><li class="widget-tag-list-item"><a class="widget-tag-list-link" href="/tags/%E8%8B%B9%E6%9E%9C/" rel="tag">苹果</a></li><li class="widget-tag-list-item"><a class="widget-tag-list-link" href="/tags/%E8%99%9A%E6%8B%9F%E6%9C%BA/" rel="tag">虚拟机</a></li><li class="widget-tag-list-item"><a class="widget-tag-list-link" href="/tags/%E8%B6%8A%E7%8B%B1/" rel="tag">越狱</a></li></ul>
+    </div>
+  </div>
+
+
+    
+      
+  <div class="widget-wrap">
+    <div class="widget">
+      <h3 class="widget-title">归档</h3>
+      
+      
+        <a class="archive-link" href="/archives/2026/04 ">
+          四月 2026 
+          <div class="archive-count">5 </div>
+        </a>
+      
+        <a class="archive-link" href="/archives/2026/03 ">
+          三月 2026 
+          <div class="archive-count">13 </div>
+        </a>
+      
+    </div>
+  </div>
+
+
+    
+      
+  <div class="widget-wrap">
+    <div class="widget">
+      <h3 class="widget-title">最新文章</h3>
+      <ul>
+        
+          <a class="recent-link" href="/2026/04/05/17/" title="小米平板2 完美驱动(WiFi，蓝牙等各种驱动)分享" >
+            <div class="recent-link-text">
+              小米平板2 完美驱动(WiFi，蓝牙等各种驱动)分享
+            </div>
+          </a>
+        
+          <a class="recent-link" href="/2026/04/04/16/" title="联想 S8 A7600 / A7600M 黄金斗士刷机指南：" >
+            <div class="recent-link-text">
+              联想 S8 A7600 / A7600M 黄金斗士刷机指南：
+            </div>
+          </a>
+        
+          <a class="recent-link" href="/2026/04/04/15/" title="Windows XP SP3后续更新集合（简中）" >
+            <div class="recent-link-text">
+              Windows XP SP3后续更新集合（简中）
+            </div>
+          </a>
+        
+          <a class="recent-link" href="/2026/04/04/14/" title="MacOS终端命令大全" >
+            <div class="recent-link-text">
+              MacOS终端命令大全
+            </div>
+          </a>
+        
+          <a class="recent-link" href="/2026/04/04/13/" title="Mac OS系统下制作ISO映像" >
+            <div class="recent-link-text">
+              Mac OS系统下制作ISO映像
+            </div>
+          </a>
+        
+      </ul>
+    </div>
+  </div>
+
+    
+  </div>
+</sidebar>
+    </div>
+    <div id="content-body">
+       
+
+
+<article id="post-16" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  
+    
+   
+  <div class="article-inner">
+    <div class="article-main">
+      <header class="article-header">
+        
+<div class="main-title-bar">
+  <div class="main-title-dot"></div>
+  
+    
+      <h1 class="p-name article-title" itemprop="headline name">
+        联想 S8 A7600 / A7600M 黄金斗士刷机指南：
+      </h1>
+    
+  
+</div>
+
+        <div class='meta-info-bar'>
+          <div class="meta-info">
+  <time class="dt-published" datetime="2026-04-04T11:50:16.000Z" itemprop="datePublished">2026-04-04</time>
+</div>
+          <div class="need-seperator meta-info">
+            <div class="meta-cate-flex">
+  
+  <a class="meta-cate-link" href="/categories/%E6%8A%80%E6%9C%AF/">技术</a>
+   
+</div>
+  
+          </div>
+          <div class="wordcount need-seperator meta-info">
+            6.9k 词 
+          </div>
+        </div>
+        
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Android/" rel="tag">Android</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/XDA/" rel="tag">XDA</a></li></ul>
+
+      </header>
+      <div class="e-content article-entry" itemprop="articleBody">
+        
+          <h2 id="中文翻译重制：来自XDA大神XxpikaachuuxX"><a href="#中文翻译重制：来自XDA大神XxpikaachuuxX" class="headerlink" title="中文翻译重制：来自XDA大神XxpikaachuuxX"></a>中文翻译重制：来自XDA大神XxpikaachuuxX</h2><ul>
+<li>Jun 22, 2015</li>
+</ul>
+<p>注意：本教程仅适用于联想 S8 A7600(M) 手机！ 还有一款平板电脑也叫这个名称，不要混淆。 警告：您的保修期将失效。<br>我不对任何砖机或软件故障负责！仅适用于 MTK6752 ！且不适用于同型号的平板电脑。本指南适用于<br>联想 S8 7600 金色战士,是一款不错的手机，拥有相当不错的规格。我能找到的唯一缺点是它缺少社区支持，并且有大<br>量的预装软件，无法删除。但很快就会改变！ 让我们来 Root 吧，伙计们。</p>
+<p>A7600 Only:</p>
+<ol>
+<li>联想固件，包括中文 TWRP 恢复，由我提供在此处： (这是我能找到的唯一一个。如果有人足够勇敢地制作英文版本，并希望将其上传到此主题，请随意这样做。)<br>固件：<a target="_blank" rel="noopener" href="https://drive.google.com/file/d/0Bzt5QqUHjbg3SzZWVElUeXpyekU/view?usp=sharing">https://drive.google.com/file/d/0Bzt5QqUHjbg3SzZWVElUeXpyekU/view?usp=sharing</a> <br>英文 TWRP： <a target="_blank" rel="noopener" href="https://drive.google.com/file/d/0Bzt5QqUHjbg3azNMbGcxdXlNSDg/view?usp=sharing">https://drive.google.com/file/d/0Bzt5QqUHjbg3azNMbGcxdXlNSDg/view?usp=sharing</a> <br>中文 TWRP： <a target="_blank" rel="noopener" href="https://drive.google.com/open?id=0Bzt5QqUHjbg3TDl2X2FqS21BR00&authuser=0">https://drive.google.com/open?id=0Bzt5QqUHjbg3TDl2X2FqS21BR00&amp;authuser=0</a></li>
+</ol>
+<p>A7600M: 固件：</p>
+<p><a target="_blank" rel="noopener" href="https://drive.google.com/file/d/0Bzt5QqUHjbg3elY2SzA2S1c2REk/view?usp=sharing">https://drive.google.com/file/d/0Bzt5QqUHjbg3elY2SzA2S1c2REk/view?usp=sharing</a></p>
+<p>中文 TWRP 恢复：</p>
+<p><a target="_blank" rel="noopener" href="https://drive.google.com/file/d/0Bzt5QqUHjbg3aXRTMkFSczZoZWM/view?usp=sharing">https://drive.google.com/file/d/0Bzt5QqUHjbg3aXRTMkFSczZoZWM/view?usp=sharing</a></p>
+<p><a target="_blank" rel="noopener" href="http://www.shizukuace.xyz:5244/d/SSD%20200G/TWRP%20%26%20Other/A7600M_TWRP2.8.6.0.zip?sign=b3-bcNtK29q1QgJ4UMXBYEPdcOvIHGDvY45uZiRrCN0=:0">作者TWRP的国内备份OnlyOne</a></p>
+<ol start="2">
+<li><p>SP Flash Tools。这需要用于刷新 Sock Rom (包含恢复)。版本 5.13xxxx 或更高版本。<br><a target="_blank" rel="noopener" href="http://www.mediafire.com/download/zx5m9mp3x5p413h/SP_Flash_Tool_v5.1452.00.zip">Clickhere</a></p>
+</li>
+<li><p>联发科驱动程序（我认为它自己就能解释了） <a target="_blank" rel="noopener" href="http://d-h.st/1PN">http://d-h.st/1PN</a></p>
+</li>
+<li><p>SuperSU（感谢 Chainfire，我们爱你）<a target="_blank" rel="noopener" href="https://download.chainfire.eu/696/SuperSU/UPDATE-SuperSU-v2.46.zip">https://download.chainfire.eu/696/SuperSU/UPDATE-SuperSU-v2.46.zip</a></p>
+</li>
+</ol>
+<p>5.(可选) 如果你想使用 Google Apps，我建议从这个主题下载 5.0 的 GApps Mini:<br><a target="_blank" rel="noopener" href="http://xdaforums.com/android/software-hacking/gapps-mini-t3089612">http://xdaforums.com/android/software-hacking/gapps-mini-t3089612</a></p>
+<p>现在开始吧：</p>
+<ol>
+<li>解压驱动程序包并运行 EXE 文件。安装完成后，重新启动计算机。如果使用 Windows 8，请禁用签名<br>驱动程序强制执行。</li>
+<li>关闭设备。打开 SP Flash Tools 文件夹并以管理员身份运行 Flash_tool.exe。</li>
+<li>现在解压 VibeUI 固件包。在 SP Flashtools 中，单击 Scatter Load。导航到 VibeUI 文<br>件夹并选择 MT6752_Android_scatter.txt。 编辑：有些人，包括我自己，在 Scatter 文件方面遇到了问题。<br>但是，如果遇到错误，请尝试创建自己的 Scatter 文件，参考此主题：<a target="_blank" rel="noopener" href="http://xdaforums.com/showthread.php?t=2151251">http://xdaforums.com/showthread.php?t=2151251</a></li>
+<li>检查除了 System 之外的每个下载文件是否都被选中，否则会出现错误。</li>
+<li>重要提示： 进入设置，下载并 勾选 DA DL All with Checksum。</li>
+<li>单击下载。</li>
+<li>现在进入棘手的部分。取下电池。再次插入它。现在保持设备关机状态，然后插入 USB 数据线，同时按住音量增大按钮。</li>
+<li>如果你在 SP Flash tools 中看到红条，然后是黄色，然后是灰色，则你做对了。如果闪存成功，你将看到绿色的勾选标记。</li>
+<li>现在拔出 USB 数据线，取出电池并重新插入。启动手机。如果它启动速度较慢，不要感到惊讶，通常需要大约 6-8 分钟。请耐心等待！</li>
+<li>如果手机成功启动，请配置它并将它作为 MTP 设备连接到计算机。</li>
+<li>现在将 GApps.zip 和 SuperSu.zip 复制到手机存储器的根目录。</li>
+<li>启动到恢复模式（同时按住音量增大和减小按钮来开机）并闪存这两个 ZIP 文件。它们是中文的，但你只需要闪存一次。<br>Flash Zip 是左上角按钮。选择你的 GappsZip，然后使用返回按钮返回到主屏幕。现在闪存 SuperSA.zip。</li>
+<li>重新启动。如果你不知道如何，只需取下电池（这比较危险，最好尝试使用按钮。布局与英文版本相同）。 完成！现在你的设<br>备已 Root 并且安装了 Gapps。下载 Titanium Backup 并删除中文垃圾预装软件。你现在是你的设备的主人。<br> (有些人抱怨 IMEI 信息丢失，感谢 Soyer88 的修复！很抱歉我离开了太久，我正在准备期末考试。)</li>
+</ol>
+<blockquote>
+<p><a target="_blank" rel="noopener" href="https://xdaforums.com/goto/post?id=0">Soyer88</a> 对于那些在手机上丢失 IMEI 地址的人，或者任<br>何其他设备，这里有一个简单的指南解决了我的问题：</p>
+<ol>
+<li>下载这个 <a target="_blank" rel="noopener" href="http://www.4shared.com/file/aNRAdrvgba/sn_gen.html">Clickit</a>，或搜索 sn_gen.exe（不用担心，该程序没有翻译，这不会有问题）</li>
+<li>在 IMEI 1 字段中输入你原始的 IMEI 地址（电池后面）</li>
+<li>单击 MP0B_001- 它会在你的桌面上创建一个名为 MP0B_001 的文件。</li>
+<li>将文件复制到你的手机，安装 Root Explorer，将文件发送到 data&#x2F;nvram&#x2F;md&#x2F;NVRAM&#x2F;NVD_IMEI&#x2F;，并更改文件的权限（选中所有框）</li>
+<li>重新启动手机。 这样就完成了！这个手机很难刷机（或恢复），因为它使用了芯片组……这非常罕见。 这里有<br>一个俄语论坛，上面有所有自定义 ROM（包括官方中文版）以及对这款手机的支持 - <a target="_blank" rel="noopener" href="http://4pda.ru/forum/index.php?showtopic=657464">http://4pda.ru/forum/index.php?showtopic=657464</a>，<br>它对我帮助很大！</li>
+</ol>
+</blockquote>
+<p>一定要给他捐赠啤酒！<br>大佬主页<br><a target="_blank" rel="noopener" href="https://xdaforums.com/m/xxpikaachuuxx.5993195/">https://xdaforums.com/m/xxpikaachuuxx.5993195/</a></p>
+<p>上次编辑：Dec 13, 2015</p>
+<p><strong>来自XDA大神XxpikaachuuxX的原文：</strong><br><strong>Note: This Tutorial is for the Lenovo S8 A7600(M) MOBILE Only! Theres a Tablet named the same, dont get confused.</strong><br><strong>Warning: Your Warranty is void. I am not responsible for any kind of bricks or software failure! Only for MTK6752 ! And not for the same Numbered Tablet. this guide is for the Phone.</strong><br>The Lenovo S8 7600 Golden Warrior is a very nice phone with some quite good specs. Only cons I could find was that it has none of community and tons of bloatware which is unremovable. Yet!<br>Lets root it, Guys.<br><strong>You Need:</strong><br>Model A7600 Only:<br>1.The Lenovo Firmware including Chinese TWRP which is provided here by me:<br>(Thats the only one i could find. If anyone is Brave enough to make an English Version and wants to upload it for this thread fell free to do it.)<br>Firmware:<br><a target="_blank" rel="noopener" href="https://drive.google.com/file/d/0Bzt5QqUHjbg3SzZWVElUeXpyekU/view?usp=sharing">https://drive.google.com/file/d/0Bzt5QqUHjbg3SzZWVElUeXpyekU/view?usp=sharing</a><br>English TWRP:<br><a target="_blank" rel="noopener" href="https://drive.google.com/file/d/0Bzt5QqUHjbg3azNMbGcxdXlNSDg/view?usp=sharing">https://drive.google.com/file/d/0Bzt5QqUHjbg3azNMbGcxdXlNSDg/view?usp=sharing</a><br>Chinese TWRP:<br><a target="_blank" rel="noopener" href="https://drive.google.com/open?id=0Bzt5QqUHjbg3TDl2X2FqS21BR00&authuser=0">https://drive.google.com/open?id=0Bzt5QqUHjbg3TDl2X2FqS21BR00&amp;authuser=0</a></p>
+<p>Model A7600M:<br>Firmware:</p>
+<p><a target="_blank" rel="noopener" href="https://drive.google.com/file/d/0Bzt5QqUHjbg3elY2SzA2S1c2REk/view?usp=sharing">https://drive.google.com/file/d/0Bzt5QqUHjbg3elY2SzA2S1c2REk/view?usp=sharing</a></p>
+<p>TWRP Recovery(Chinese):</p>
+<p><a target="_blank" rel="noopener" href="https://drive.google.com/file/d/0Bzt5QqUHjbg3aXRTMkFSczZoZWM/view?usp=sharing">https://drive.google.com/file/d/0Bzt5QqUHjbg3aXRTMkFSczZoZWM/view?usp=sharing</a></p>
+<p>2.SP Flash Tools. This will be Needed for flashing the Sock Rom Incl. Recovery. Version 5.13xxxx Minimum Requied.<br><a target="_blank" rel="noopener" href="http://www.mediafire.com/download/zx5m9mp3x5p413h/SP_Flash_Tool_v5.1452.00.zip">http://www.mediafire.com/download/zx5m9mp3x5p413h/SP_Flash_Tool_v5.1452.00.zip</a></p>
+<ol start="3">
+<li><p>The Meadiatek Driver(Explains itself i think)<br><a target="_blank" rel="noopener" href="http://d-h.st/1PN">http://d-h.st/1PN</a></p>
+</li>
+<li><p>The SuperSU.ZIP (Thanks Chainfire, we love you)<br><a target="_blank" rel="noopener" href="https://download.chainfire.eu/696/SuperSU/UPDATE-SuperSU-v2.46.zip">https://download.chainfire.eu/696/SuperSU/UPDATE-SuperSU-v2.46.zip</a></p>
+</li>
+</ol>
+<p>5.(optional) If you want to use the Google Apps i recommend Downloading the GApps Mini for 5.0 from this thread:<br><a target="_blank" rel="noopener" href="http://xdaforums.com/android/software-hacking/gapps-mini-t3089612">http://xdaforums.com/android/software-hacking/gapps-mini-t3089612</a></p>
+<p><strong>Now Lets get Started:</strong><br>1. Unzip the Driver Package and Run the Exe. After Installation, restart you Computer. If using Windows 8, disable Signaure Driver Enforcement.<br>2. Turn Off you device. Open the SP Flash Tools Folder and run Flash_tool.exe as Administrator.<br>3. Now Unzip the VibeUI Firmware Package. In SP Flashtools klick on Scatter Load. Navigate to the VibeUI Folder and choose the MT6752_Android_scatter.txt.<br>Edt: Some People Including me had Problems with the Scatter File. However, If getting errors, try creating your own scatter file referring this thread: <a target="_blank" rel="noopener" href="http://xdaforums.com/showthread.php?t=2151251">http://xdaforums.com/showthread.php?t=2151251</a><br>4. Check if every Downloadfile exept the System is Checked, else you will get an error.<br>5.IMPORTANT: Go to settings, Download and <strong>CHECK the DA DL All with Checksum.</strong><br>6. Klick on Download.<br>7. NOW the Tricky Part. Remove the Battery. Insert it again. Now leave the Phone Turned off and plug the USB Cable in, but holding the Volume UP button.<br>8. If you get a Red Bar and a Yellow followed by some grey in SP Flash tools you have done it right. If the Flash was successfully, you will get a green tick mark as passed.<br>9. Now unplug USB and take the battery out and pop it in again. Boot the Phone. Dont get shocked if it doesn’t boot up fast, it usually takes about 6-8 Minutes. Be Patient!<br>10. If the Phone Boots up successfully, configure it and Connect it as a MTP Device on the Computer.<br>11. Now Copy the GApps.zip and the SuperSu.Zip to the Root of the Phone Memory.<br>12. Boot into Recovery (Holding VOL UP AND DOWN while turning the Phone on) and flash the two Zips. Its in Chinese but you will<br>only need to flash it once. Flash Zip is the Upper Left Button. Choose your GappsZip and use the Back Button to get to the main Screen. Now flash the SuperSA.zip.<br>13.Reboot. If you dont know how to just take off the battery ( Its quite risky so better try using the Buttons. The Layout is the same as in the English Version)</p>
+<p><strong>Finished!Now your Device is Rooted and got the Gapps on it. Download Titanium Backup and remove the Chinese Crap Bloatware. You are now the Master of your Device. I would be really happy about Donations, since It was very Hard to get Hands on these Roms and Recoverys.</strong></p>
+<p>INFO: Some People Complained about the lost IMEI, Thank you Soyer88 for the fix! Sorry that I was away for too long, I got my finals.</p>
+<blockquote>
+<p><a target="_blank" rel="noopener" href="https://xdaforums.com/goto/post?id=0">Soyer88 said:</a><br>For those of you who lost the IMEI address on this phone, or ANY other, here is simple guide witch solved my problem:<br>1. Download this <a target="_blank" rel="noopener" href="http://www.4shared.com/file/aNRAdrvgba/sn_gen.html">http://www.4shared.com/file/aNRAdrvgba/sn_gen.html</a> , or search sn_gen.exe (Dont worry, the program is not translated that isn’t a problem)<br>2. In the ??IMEI 1 field write your original imei address (behind the battery)<br>3. Click on ??MP0B_001?? - It will create a file on your desktop named MP0B_001.<br>4. Copy the file in your phone, Install Root Explorer, send the file in data&#x2F;nvram&#x2F;md&#x2F;NVRAM&#x2F;NVD_IMEI&#x2F; and change the permission of the file (check all boxes)<br>5. Restart the phone.<br>Thats it ! This phone is very tricky to flash (or recover) , because of the chipset.. its very rare<br>I had a lot of problems to fix it, You have to use the right version of Sp flash tool !!!<br>Here is a russian forum with ALL the custom ROM’s (including the official chinese) and support for this phone - <a target="_blank" rel="noopener" href="http://4pda.ru/forum/index.php?showtopic=657464">http://4pda.ru/forum/index.php?showtopic=657464</a> it helped me a lot!</p>
+</blockquote>
+<p>Be sure to donate him a Beer!<br><a target="_blank" rel="noopener" href="https://xdaforums.com/m/xxpikaachuuxx.5993195/">https://xdaforums.com/m/xxpikaachuuxx.5993195/</a></p>
+<p>Last edited: Dec 13, 2015</p>
+
+        
+      </div>
+
+         
+    </div>
+    
+     
+  </div>
+  
+    
+<nav id="article-nav">
+  <a class="article-nav-btn left "
+    
+      href="/2026/04/05/17/"
+      title="小米平板2 完美驱动(WiFi，蓝牙等各种驱动)分享"
+     >
+    <i class="fa-solid fa-angle-left"></i>
+    <p class="title-text">
+      
+        小米平板2 完美驱动(WiFi，蓝牙等各种驱动)分享
+        
+    </p>
+  </a>
+  <a class="article-nav-btn right "
+    
+      href="/2026/04/04/15/"
+      title="Windows XP SP3后续更新集合（简中）"
+     >
+
+    <p class="title-text">
+      
+        Windows XP SP3后续更新集合（简中）
+        
+    </p>
+    <i class="fa-solid fa-angle-right"></i>
+  </a>
+</nav>
+
+
+  
+</article>
+
+
+
+
+  <script src="https://cdn.staticfile.org/twikoo/1.6.26/twikoo.all.min.js"></script>
+  <div id="comment-card" class="comment-card">
+    <div class="main-title-bar">
+      <div class="main-title-dot"></div>
+      <div class="main-title">留言 </div>
+    </div>
+    <div id="tcomment"></div>
+  </div>
+  <script>
+      twikoo.init({
+          envId: 'http://www.shizukuace.xyz:8081',
+          el: '#tcomment',
+          region: '',
+          path: 'location.pathname',
+          lang: 'zh-CN',
+      })
+  </script>
+  
+
+
+    </div>
+    <div id="footer-wrapper">
+      <footer id="footer">
+  
+  <div id="footer-info" class="inner">
+    
+    &copy; 2026 Shizuku<br>
+    Powered by <a href="https://hexo.io/" target="_blank">Hexo</a> & Theme <a target="_blank" rel="noopener" href="https://github.com/saicaca/hexo-theme-vivia">Vivia</a>
+  </div>
+</footer>
+
+    </div>
+    <div class="back-to-top-wrapper">
+    <button id="back-to-top-btn" class="back-to-top-btn hide" onclick="topFunction()">
+        <i class="fa-solid fa-angle-up"></i>
+    </button>
+</div>
+
+<script>
+    function topFunction() {
+        window.scroll({ top: 0, behavior: 'smooth' });
+    }
+    let btn = document.getElementById('back-to-top-btn');
+    function scrollFunction() {
+        if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
+            btn.classList.remove('hide')
+        } else {
+            btn.classList.add('hide')
+        }
+    }
+    window.onscroll = function() {
+        scrollFunction();
+    }
+</script>
+
+  </div>
+  <script src="/js/light-dark-switch.js"></script>
+</body>
+</html>

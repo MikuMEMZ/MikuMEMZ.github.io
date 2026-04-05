@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+
+
+<html theme="light" showBanner="true" hasBanner="true" > 
+<link href="https://cdn.staticfile.org/font-awesome/6.4.2/css/fontawesome.min.css" rel="stylesheet">
+<link href="https://cdn.staticfile.org/font-awesome/6.4.2/css/brands.min.css" rel="stylesheet">
+<link href="https://cdn.staticfile.org/font-awesome/6.4.2/css/solid.min.css" rel="stylesheet">
+<script src="/js/color.global.min.js" ></script>
+<script src="/js/load-settings.js" ></script>
+<head>
+  <meta charset="utf-8">
+  
+  
+  
+
+  
+  <title>MacOS终端命令大全 | Shizuku Blogs</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <link rel="preload" href="/css/fonts/Roboto-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+  <link rel="preload" href="/css/fonts/Roboto-Bold.ttf" as="font" type="font/ttf" crossorigin="anonymous">
+
+  <meta name="description" content="macOS终端常用命令大集合-mac系统  不管是在Windows系统还是在macOS系统中，都有一个名为”终端”的应用，对于我们普通人来说它就好像是个很深奥的东西，只有技术流，程序猿才能驾驭。其实不然。  可以收藏一下，以免之后需要时找不到了。 初识终端   命令的构成：Command Name、Options、Arguments、Extras 四个部分，很多情况下后面三部分都是可省略的。Opt">
+<meta property="og:type" content="article">
+<meta property="og:title" content="MacOS终端命令大全">
+<meta property="og:url" content="http://example.com/2026/04/04/14/index.html">
+<meta property="og:site_name" content="Shizuku Blogs">
+<meta property="og:description" content="macOS终端常用命令大集合-mac系统  不管是在Windows系统还是在macOS系统中，都有一个名为”终端”的应用，对于我们普通人来说它就好像是个很深奥的东西，只有技术流，程序猿才能驾驭。其实不然。  可以收藏一下，以免之后需要时找不到了。 初识终端   命令的构成：Command Name、Options、Arguments、Extras 四个部分，很多情况下后面三部分都是可省略的。Opt">
+<meta property="og:locale" content="zh_CN">
+<meta property="og:image" content="https://pica.zhimg.com/v2-2caa1fe5a34fae42c293c2409b7611f2_r.jpg">
+<meta property="article:published_time" content="2026-04-04T07:21:41.000Z">
+<meta property="article:modified_time" content="2026-04-04T07:31:02.552Z">
+<meta property="article:author" content="Shizuku">
+<meta property="article:tag" content="Linux">
+<meta property="article:tag" content="MacOS">
+<meta property="article:tag" content="bash">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://pica.zhimg.com/v2-2caa1fe5a34fae42c293c2409b7611f2_r.jpg">
+  
+  
+    <link rel="shortcut icon" href="/img/1.ico">
+  
+  
+  
+<link rel="stylesheet" href="/css/style.css">
+
+<meta name="generator" content="Hexo 8.1.1"></head>
+
+<body>
+  
+  
+    
+<div id="banner" class="">
+  <img src="https://haowallpaper.com/link/common/file/previewFileImg/16683117277924736" itemprop="image">
+  <div id="banner-dim"></div>
+</div>
+ 
+   
+  <div id="main-grid" class="  ">
+    <div id="nav" class=""  >
+      <navbar id="navbar">
+  <nav id="title-nav">
+    <a href="/">
+      <div id="vivia-logo">
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+      </div>
+      <div>Shizuku Blogs </div>
+    </a>
+  </nav>
+  <nav id="main-nav">
+    
+      <a class="main-nav-link" href="/">首页</a>
+    
+      <a class="main-nav-link" href="/archives">文章&amp;资源&amp;各种杂七杂八</a>
+    
+      <a class="main-nav-link" href="/about">关于</a>
+    
+  </nav>
+  <nav id="sub-nav">
+    <a id="theme-btn" class="nav-icon">
+      <span class="light-mode-icon"><svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 -960 960 960" width="20"><path d="M438.5-829.913v-48q0-17.452 11.963-29.476 11.964-12.024 29.326-12.024 17.363 0 29.537 12.024t12.174 29.476v48q0 17.452-11.963 29.476-11.964 12.024-29.326 12.024-17.363 0-29.537-12.024T438.5-829.913Zm0 747.826v-48q0-17.452 11.963-29.476 11.964-12.024 29.326-12.024 17.363 0 29.537 12.024t12.174 29.476v48q0 17.452-11.963 29.476-11.964 12.024-29.326 12.024-17.363 0-29.537-12.024T438.5-82.087ZM877.913-438.5h-48q-17.452 0-29.476-11.963-12.024-11.964-12.024-29.326 0-17.363 12.024-29.537t29.476-12.174h48q17.452 0 29.476 11.963 12.024 11.964 12.024 29.326 0 17.363-12.024 29.537T877.913-438.5Zm-747.826 0h-48q-17.452 0-29.476-11.963-12.024-11.964-12.024-29.326 0-17.363 12.024-29.537T82.087-521.5h48q17.452 0 29.476 11.963 12.024 11.964 12.024 29.326 0 17.363-12.024 29.537T130.087-438.5Zm660.174-290.87-34.239 32q-12.913 12.674-29.565 12.174-16.653-.5-29.327-13.174-12.674-12.673-12.554-28.826.12-16.152 12.794-28.826l33-35q12.913-12.674 30.454-12.674t30.163 12.847q12.709 12.846 12.328 30.826-.38 17.98-13.054 30.653ZM262.63-203.978l-32 34q-12.913 12.674-30.454 12.674t-30.163-12.847q-12.709-12.846-12.328-30.826.38-17.98 13.054-30.653l33.239-31q12.913-12.674 29.565-12.174 16.653.5 29.327 13.174 12.674 12.673 12.554 28.826-.12 16.152-12.794 28.826Zm466.74 33.239-32-33.239q-12.674-12.913-12.174-29.565.5-16.653 13.174-29.327 12.673-12.674 28.826-13.054 16.152-.38 28.826 12.294l35 33q12.674 12.913 12.674 30.454t-12.847 30.163q-12.846 12.709-30.826 12.328-17.98-.38-30.653-13.054ZM203.978-697.37l-34-33q-12.674-12.913-13.174-29.945-.5-17.033 12.174-29.707t31.326-13.293q18.653-.62 31.326 13.054l32 34.239q11.674 12.913 11.174 29.565-.5 16.653-13.174 29.327-12.673 12.674-28.826 12.554-16.152-.12-28.826-12.794ZM480-240q-100 0-170-70t-70-170q0-100 70-170t170-70q100 0 170 70t70 170q0 100-70 170t-170 70Zm-.247-82q65.703 0 111.475-46.272Q637-414.544 637-480.247t-45.525-111.228Q545.95-637 480.247-637t-111.475 45.525Q323-545.95 323-480.247t45.525 111.975Q414.05-322 479.753-322ZM481-481Z"/></svg></span>
+      <span class="dark-mode-icon"><svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 -960 960 960" width="20"><path d="M480.239-116.413q-152.63 0-258.228-105.478Q116.413-327.37 116.413-480q0-130.935 77.739-227.435t206.304-125.043q43.022-9.631 63.87 10.869t3.478 62.805q-8.891 22.043-14.315 44.463-5.424 22.42-5.424 46.689 0 91.694 64.326 155.879 64.325 64.186 156.218 64.186 24.369 0 46.978-4.946 22.609-4.945 44.413-14.076 42.826-17.369 62.967 1.142 20.142 18.511 10.511 61.054Q807.174-280 712.63-198.206q-94.543 81.793-232.391 81.793Zm0-95q79.783 0 143.337-40.217 63.554-40.218 95.793-108.283-15.608 4.044-31.097 5.326-15.49 1.283-31.859.805-123.706-4.066-210.777-90.539-87.071-86.473-91.614-212.092-.24-16.369.923-31.978 1.164-15.609 5.446-30.978-67.826 32.478-108.282 96.152Q211.652-559.543 211.652-480q0 111.929 78.329 190.258 78.329 78.329 190.258 78.329ZM466.13-465.891Z"/></svg></span>
+    </a>
+    
+    
+      <a id="cloud" class="nav-icon mobile-hide" target="_blank" rel="noopener" href="http://www.shizukuace.xyz:5244/" title="云盘">
+        <svg xmlns="http://www.w3.org/2000/svg" height="20"  width="20" viewBox="0 0 640 640"><!--!Font Awesome Free v7.2.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2026 Fonticons, Inc.--><path d="M112 256C112 167.6 183.6 96 272 96C319.1 96 361.4 116.4 390.7 148.7C401.3 145.6 412.5 144 424 144C490.3 144 544 197.7 544 264C544 277.2 541.9 289.9 537.9 301.8C579.5 322.9 608 366.1 608 416C608 486.7 550.7 544 480 544L176 544C96.5 544 32 479.5 32 400C32 343.2 64.9 294.1 112.7 270.6C112.3 265.8 112 260.9 112 256zM272 144C210.1 144 160 194.1 160 256C160 264.4 160.9 272.6 162.7 280.5C165.4 292.6 158.4 304.8 146.6 308.6C107.9 321 80 357.3 80 400C80 453 123 496 176 496L480 496C524.2 496 560 460.2 560 416C560 378.6 534.3 347.1 499.5 338.4C492 336.5 485.9 331.2 483 324.1C480.1 317 480.9 308.9 485 302.4C492 291.3 496 278.2 496 264.1C496 224.3 463.8 192.1 424 192.1C412.9 192.1 402.5 194.6 393.2 199C382.7 204 370.1 200.7 363.4 191.2C343.1 162.6 309.7 144.1 272.1 144.1z"/></svg>
+      </a>
+    
+    <div id="nav-menu-btn" class="nav-icon">
+      <svg xmlns="http://www.w3.org/2000/svg" height="20" viewBox="0 -960 960 960" width="20"><path d="M177.37-252.282q-17.453 0-29.477-11.964-12.024-11.963-12.024-29.326t12.024-29.537q12.024-12.174 29.477-12.174h605.26q17.453 0 29.477 11.964 12.024 11.963 12.024 29.326t-12.024 29.537q-12.024 12.174-29.477 12.174H177.37Zm0-186.218q-17.453 0-29.477-11.963-12.024-11.964-12.024-29.326 0-17.363 12.024-29.537T177.37-521.5h605.26q17.453 0 29.477 11.963 12.024 11.964 12.024 29.326 0 17.363-12.024 29.537T782.63-438.5H177.37Zm0-186.217q-17.453 0-29.477-11.964-12.024-11.963-12.024-29.326t12.024-29.537q12.024-12.174 29.477-12.174h605.26q17.453 0 29.477 11.964 12.024 11.963 12.024 29.326t-12.024 29.537q-12.024 12.174-29.477 12.174H177.37Z"/></svg>
+    </div>
+  </nav>
+</navbar>
+<div id="nav-dropdown" class="hidden">
+  <div id="dropdown-link-list">
+    
+      <a class="nav-dropdown-link" href="/">首页</a>
+    
+      <a class="nav-dropdown-link" href="/archives">文章&amp;资源&amp;各种杂七杂八</a>
+    
+      <a class="nav-dropdown-link" href="/about">关于</a>
+    
+     
+    </div>
+</div>
+<script>
+  let dropdownBtn = document.getElementById("nav-menu-btn");
+  let dropdownEle = document.getElementById("nav-dropdown");
+  dropdownBtn.onclick = function() {
+    dropdownEle.classList.toggle("hidden");
+  }
+</script>
+    </div>
+    <div id="sidebar-wrapper">
+      <sidebar id="sidebar">
+  
+    <div class="widget-wrap">
+  <div class="info-card">
+    <div class="avatar">
+      
+        <image src=/img/avatar.jpg></image>
+      
+      <div class="img-dim"></div>
+    </div>
+    <div class="info">
+      <div class="username">Shizuku </div>
+      <div class="dot"></div>
+      <div class="subtitle">我这么美我不能死 </div>
+      <div class="link-list">
+        
+          <a class="link-btn" target="_blank" rel="noopener" href="https://x.com/mikumemz?s=21" title="X"><i class="fa-brands fa-x-twitter"></i></a>
+        
+          <a class="link-btn" target="_blank" rel="noopener" href="https://space.bilibili.com/3546558266084225?spm_id_from=333.337.0.0" title="BiliBili"><i class="fa-brands fa-bilibili"></i></a>
+        
+          <a class="link-btn" target="_blank" rel="noopener" href="https://qm.qq.com/q/GtzueUuGye" title="QQ"><i class="fa-brands fa-qq"></i></a>
+         
+      </div>  
+    </div>
+  </div>
+</div>
+
+  
+  <div class="sticky">
+    
+      
+
+
+  <div class="widget-wrap">
+    <div class="widget">
+      <h3 class="widget-title">分类</h3>
+      <div class="category-box">
+            <a class="category-link" href="/categories/%E8%B5%84%E6%BA%90/">
+                资源
+                <div class="category-count">13</div>
+            </a>
+        
+            <a class="category-link" href="/categories/%E6%8A%80%E6%9C%AF/">
+                技术
+                <div class="category-count">4</div>
+            </a>
+        
+            <a class="category-link" href="/categories/%E6%97%A5%E8%AE%B0/">
+                日记
+                <div class="category-count">1</div>
+            </a>
+        </div>
+    </div>
+  </div>
+
+
+    
+      
+  <div class="widget-wrap">
+    <div class="widget">
+      <h3 class="widget-title">标签</h3>
+      <ul class="widget-tag-list" itemprop="keywords"><li class="widget-tag-list-item"><a class="widget-tag-list-link" href="/tags/Android/" rel="tag">Android</a></li><li class="widget-tag-list-item"><a class="widget-tag-list-link" href="/tags/Crossover/" rel="tag">Crossover</a></li><li class="widget-tag-list-item"><a class="widget-tag-list-link" href="/tags/Linux/" rel="tag">Linux</a></li><li class="widget-tag-list-item"><a class="widget-tag-list-link" href="/tags/MacOS/" rel="tag">MacOS</a></li><li class="widget-tag-list-item"><a class="widget-tag-list-link" href="/tags/MacOSX/" rel="tag">MacOSX</a></li><li class="widget-tag-list-item"><a class="widget-tag-list-link" href="/tags/Microsoft/" rel="tag">Microsoft</a></li><li class="widget-tag-list-item"><a class="widget-tag-list-link" href="/tags/PE/" rel="tag">PE</a></li><li class="widget-tag-list-item"><a class="widget-tag-list-link" href="/tags/Tools/" rel="tag">Tools</a></li><li class="widget-tag-list-item"><a class="widget-tag-list-link" href="/tags/VMware/" rel="tag">VMware</a></li><li class="widget-tag-list-item"><a class="widget-tag-list-link" href="/tags/Windows/" rel="tag">Windows</a></li><li class="widget-tag-list-item"><a class="widget-tag-list-link" href="/tags/Wine/" rel="tag">Wine</a></li><li class="widget-tag-list-item"><a class="widget-tag-list-link" href="/tags/XDA/" rel="tag">XDA</a></li><li class="widget-tag-list-item"><a class="widget-tag-list-link" href="/tags/Xiaomi/" rel="tag">Xiaomi</a></li><li class="widget-tag-list-item"><a class="widget-tag-list-link" href="/tags/bash/" rel="tag">bash</a></li><li class="widget-tag-list-item"><a class="widget-tag-list-link" href="/tags/iOS/" rel="tag">iOS</a></li><li class="widget-tag-list-item"><a class="widget-tag-list-link" href="/tags/iso/" rel="tag">iso</a></li><li class="widget-tag-list-item"><a class="widget-tag-list-link" href="/tags/miPad/" rel="tag">miPad</a></li><li class="widget-tag-list-item"><a class="widget-tag-list-link" href="/tags/%E5%B7%A5%E5%85%B7/" rel="tag">工具</a></li><li class="widget-tag-list-item"><a class="widget-tag-list-link" href="/tags/%E6%95%99%E7%A8%8B/" rel="tag">教程</a></li><li class="widget-tag-list-item"><a class="widget-tag-list-link" href="/tags/%E6%9D%82/" rel="tag">杂</a></li><li class="widget-tag-list-item"><a class="widget-tag-list-link" href="/tags/%E7%A3%81%E7%9B%98/" rel="tag">磁盘</a></li><li class="widget-tag-list-item"><a class="widget-tag-list-link" href="/tags/%E8%8B%B9%E6%9E%9C/" rel="tag">苹果</a></li><li class="widget-tag-list-item"><a class="widget-tag-list-link" href="/tags/%E8%99%9A%E6%8B%9F%E6%9C%BA/" rel="tag">虚拟机</a></li><li class="widget-tag-list-item"><a class="widget-tag-list-link" href="/tags/%E8%B6%8A%E7%8B%B1/" rel="tag">越狱</a></li></ul>
+    </div>
+  </div>
+
+
+    
+      
+  <div class="widget-wrap">
+    <div class="widget">
+      <h3 class="widget-title">归档</h3>
+      
+      
+        <a class="archive-link" href="/archives/2026/04 ">
+          四月 2026 
+          <div class="archive-count">5 </div>
+        </a>
+      
+        <a class="archive-link" href="/archives/2026/03 ">
+          三月 2026 
+          <div class="archive-count">13 </div>
+        </a>
+      
+    </div>
+  </div>
+
+
+    
+      
+  <div class="widget-wrap">
+    <div class="widget">
+      <h3 class="widget-title">最新文章</h3>
+      <ul>
+        
+          <a class="recent-link" href="/2026/04/05/17/" title="小米平板2 完美驱动(WiFi，蓝牙等各种驱动)分享" >
+            <div class="recent-link-text">
+              小米平板2 完美驱动(WiFi，蓝牙等各种驱动)分享
+            </div>
+          </a>
+        
+          <a class="recent-link" href="/2026/04/04/16/" title="联想 S8 A7600 / A7600M 黄金斗士刷机指南：" >
+            <div class="recent-link-text">
+              联想 S8 A7600 / A7600M 黄金斗士刷机指南：
+            </div>
+          </a>
+        
+          <a class="recent-link" href="/2026/04/04/15/" title="Windows XP SP3后续更新集合（简中）" >
+            <div class="recent-link-text">
+              Windows XP SP3后续更新集合（简中）
+            </div>
+          </a>
+        
+          <a class="recent-link" href="/2026/04/04/14/" title="MacOS终端命令大全" >
+            <div class="recent-link-text">
+              MacOS终端命令大全
+            </div>
+          </a>
+        
+          <a class="recent-link" href="/2026/04/04/13/" title="Mac OS系统下制作ISO映像" >
+            <div class="recent-link-text">
+              Mac OS系统下制作ISO映像
+            </div>
+          </a>
+        
+      </ul>
+    </div>
+  </div>
+
+    
+  </div>
+</sidebar>
+    </div>
+    <div id="content-body">
+       
+
+
+<article id="post-14" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+  
+    
+   
+  <div class="article-inner">
+    <div class="article-main">
+      <header class="article-header">
+        
+<div class="main-title-bar">
+  <div class="main-title-dot"></div>
+  
+    
+      <h1 class="p-name article-title" itemprop="headline name">
+        MacOS终端命令大全
+      </h1>
+    
+  
+</div>
+
+        <div class='meta-info-bar'>
+          <div class="meta-info">
+  <time class="dt-published" datetime="2026-04-04T07:21:41.000Z" itemprop="datePublished">2026-04-04</time>
+</div>
+          <div class="need-seperator meta-info">
+            <div class="meta-cate-flex">
+  
+  <a class="meta-cate-link" href="/categories/%E6%8A%80%E6%9C%AF/">技术</a>
+   
+</div>
+  
+          </div>
+          <div class="wordcount need-seperator meta-info">
+            2.4k 词 
+          </div>
+        </div>
+        
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/Linux/" rel="tag">Linux</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/MacOS/" rel="tag">MacOS</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/bash/" rel="tag">bash</a></li></ul>
+
+      </header>
+      <div class="e-content article-entry" itemprop="articleBody">
+        
+          <p>macOS终端常用命令大集合-mac系统</p>
+<blockquote>
+<p><em>不管是在Windows系统还是在macOS系统中，都有一个名为”终端”的应用，对于我们普通人来说它就好像是个很深奥的东西，只有技术流，程序猿才能驾驭。其实不然。</em></p>
+</blockquote>
+<p>可以收藏一下，以免之后需要时找不到了。</p>
+<p>初识终端</p>
+<hr>
+<p><img src="https://pica.zhimg.com/v2-2caa1fe5a34fae42c293c2409b7611f2_r.jpg"></p>
+<p>命令的构成：Com<a target="_blank" rel="noopener" href="https://zhida.zhihu.com/search?content_id=163569794&content_type=Article&match_order=1&q=man&zd_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ6aGlkYV9zZXJ2ZXIiLCJleHAiOjE3NzU0NjAwMjgsInEiOiJtYW4iLCJ6aGlkYV9zb3VyY2UiOiJlbnRpdHkiLCJjb250ZW50X2lkIjoxNjM1Njk3OTQsImNvbnRlbnRfdHlwZSI6IkFydGljbGUiLCJtYXRjaF9vcmRlciI6MSwiemRfdG9rZW4iOm51bGx9.Q1UzgaVSg9AWVmipfW2A0pwWeHFZ0RlBs93F8jrJxdk&zhida_source=entity">man</a>d Name、Options、Arguments、Extras 四个部分，很多情况下后面三部分都是可省略的。<br>Options 部分用-作为前导符。其中许多命令的 Options 部分只包含单个字母，这时可以合并。</p>
+<p>例如:ls -lA和ls -l -A是等效的。Arguments 部分用来细化这个命令或指定这个命令具体的实施对象。Extras 部分则用来进一步实现其他功能。</p>
+<p>许多功能在图形界面不提供，只有通过命令行来实现。 Finder会隐藏许多你不太会需要的文件，然而 <a target="_blank" rel="noopener" href="https://zhida.zhihu.com/search?content_id=163569794&content_type=Article&match_order=1&q=comm&zd_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ6aGlkYV9zZXJ2ZXIiLCJleHAiOjE3NzU0NjAwMjgsInEiOiJjb21tIiwiemhpZGFfc291cmNlIjoiZW50aXR5IiwiY29udGVudF9pZCI6MTYzNTY5Nzk0LCJjb250ZW50X3R5cGUiOiJBcnRpY2xlIiwibWF0Y2hfb3JkZXIiOjEsInpkX3Rva2VuIjpudWxsfQ.4uTx9PPYU-zQhjBT0EiTAkkVVMTBEBswOC3xaI0IJBg&zhida_source=entity">comm</a>and line 会允许你访问所有文件。 通过 command line 可以远程访问你的 Mac（利用 <a target="_blank" rel="noopener" href="https://zhida.zhihu.com/search?content_id=163569794&content_type=Article&match_order=1&q=SSH&zd_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ6aGlkYV9zZXJ2ZXIiLCJleHAiOjE3NzU0NjAwMjgsInEiOiJTU0giLCJ6aGlkYV9zb3VyY2UiOiJlbnRpdHkiLCJjb250ZW50X2lkIjoxNjM1Njk3OTQsImNvbnRlbnRfdHlwZSI6IkFydGljbGUiLCJtYXRjaF9vcmRlciI6MSwiemRfdG9rZW4iOm51bGx9.xKd1ZQvP9xNSk-veQg7WX5xXLOG4TUqzrg3BUeaD0pM&zhida_source=entity">SSH</a>）。 administrators 用户可以通过 <a target="_blank" rel="noopener" href="https://zhida.zhihu.com/search?content_id=163569794&content_type=Article&match_order=1&q=sudo&zd_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ6aGlkYV9zZXJ2ZXIiLCJleHAiOjE3NzU0NjAwMjgsInEiOiJzdWRvIiwiemhpZGFfc291cmNlIjoiZW50aXR5IiwiY29udGVudF9pZCI6MTYzNTY5Nzk0LCJjb250ZW50X3R5cGUiOiJBcnRpY2xlIiwibWF0Y2hfb3JkZXIiOjEsInpkX3Rva2VuIjpudWxsfQ.H7-1GjOOMUZJjBpElYX3s2YyI17sjFem8syQ9g640Iw&zhida_source=entity">sudo</a>命令获得 root 用户权限。 通过 command-line script 可以使工作更高效。 Terminal（终端）程序可以在”实用工具”里找到。 如果你开启手动输入用户名登录模式，登陆时在用户名处输入 &gt;console 可以直接进入命令行界面。随后你仍然需要登录到一个账户。</p>
+<ul>
+<li>关于 man 命令</li>
+</ul>
+<p>不管是mac还是linux都有很多命令，不可能熟练掌握所有命令，即使忘记了使用Google也能查到。mac最强大的一个命令应该算 man xxx ，Mac有上千条命令，每条命令还有许多可选参数和具体的使用方式，但是你却不需要记住这些命令。你只需要记住一个：man，查看具体的命令说明，想要推出直接键入q即可。<br>大多数命令都会包含一个使用指南，会告诉你任何你需要知道的关于这个命令的所有细节，在命令行中输入 man command-name即可获取。例如，你想知道ls这个命令怎么使用，输入man ls即可进入使用指南页面。使用指南往往很长，所以你可以使用▲（上箭头）或▼（下箭头）来上下移动，使用　来翻页，输入&#x2F;和关键字来按照关键字搜索，按Q来退出使用指南页面。</p>
+<p>那么——如果你连命令名称都不知道怎么办呢？输入man -k和关键字来对整个使用指南数据库进行搜索。</p>
+<h2 id="MacOS-常用终端命令大全："><a href="#MacOS-常用终端命令大全：" class="headerlink" title="MacOS 常用终端命令大全："></a><strong>MacOS 常用终端命令大全：</strong></h2><p><strong>目录操作</strong></p>
+<table>
+<thead>
+<tr>
+<th>cat</th>
+<th>显示或连接文件</th>
+<th>cat filename</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>pg</td>
+<td>分页格式化显示文件内容</td>
+<td>pg filename</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://zhida.zhihu.com/search?content_id=163569794&content_type=Article&match_order=1&q=more&zd_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ6aGlkYV9zZXJ2ZXIiLCJleHAiOjE3NzU0NjAwMjgsInEiOiJtb3JlIiwiemhpZGFfc291cmNlIjoiZW50aXR5IiwiY29udGVudF9pZCI6MTYzNTY5Nzk0LCJjb250ZW50X3R5cGUiOiJBcnRpY2xlIiwibWF0Y2hfb3JkZXIiOjEsInpkX3Rva2VuIjpudWxsfQ.k8k7_9oDzoXpNcop4sdfYIt9rZc01DzksBu-tUjFCjw&zhida_source=entity">more</a></td>
+<td>分屏显示文件内容</td>
+<td>more filename</td>
+</tr>
+<tr>
+<td>od</td>
+<td>显示非文本文件的内容</td>
+<td>od -c filename</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://zhida.zhihu.com/search?content_id=163569794&content_type=Article&match_order=1&q=cp&zd_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ6aGlkYV9zZXJ2ZXIiLCJleHAiOjE3NzU0NjAwMjgsInEiOiJjcCIsInpoaWRhX3NvdXJjZSI6ImVudGl0eSIsImNvbnRlbnRfaWQiOjE2MzU2OTc5NCwiY29udGVudF90eXBlIjoiQXJ0aWNsZSIsIm1hdGNoX29yZGVyIjoxLCJ6ZF90b2tlbiI6bnVsbH0.SxrGQ83I5b5XzaF4Auvg51O6JEMQIePPUd-jPlj6bWs&zhida_source=entity">cp</a></td>
+<td>复制文件或目录</td>
+<td>cp file1 file2</td>
+</tr>
+<tr>
+<td>rm</td>
+<td>删除文件或目录</td>
+<td>rm filename</td>
+</tr>
+<tr>
+<td>mv</td>
+<td>改变文件名或所在目录</td>
+<td>mv file1 file2</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://zhida.zhihu.com/search?content_id=163569794&content_type=Article&match_order=1&q=ln&zd_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ6aGlkYV9zZXJ2ZXIiLCJleHAiOjE3NzU0NjAwMjgsInEiOiJsbiIsInpoaWRhX3NvdXJjZSI6ImVudGl0eSIsImNvbnRlbnRfaWQiOjE2MzU2OTc5NCwiY29udGVudF90eXBlIjoiQXJ0aWNsZSIsIm1hdGNoX29yZGVyIjoxLCJ6ZF90b2tlbiI6bnVsbH0.x4ZuS1c1WexKAFhL1PIV-3roH_FtDCGO-09LYyRN-5A&zhida_source=entity">ln</a></td>
+<td>联接文件</td>
+<td>ln -s file1 file2</td>
+</tr>
+<tr>
+<td><a target="_blank" rel="noopener" href="https://zhida.zhihu.com/search?content_id=163569794&content_type=Article&match_order=1&q=find&zd_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ6aGlkYV9zZXJ2ZXIiLCJleHAiOjE3NzU0NjAwMjgsInEiOiJmaW5kIiwiemhpZGFfc291cmNlIjoiZW50aXR5IiwiY29udGVudF9pZCI6MTYzNTY5Nzk0LCJjb250ZW50X3R5cGUiOiJBcnRpY2xlIiwibWF0Y2hfb3JkZXIiOjEsInpkX3Rva2VuIjpudWxsfQ.YC9XhhnzhWZdYkVYaMLzuwlG3py5l3Dcj-MgzTLtIkg&zhida_source=entity">find</a></td>
+<td>使用匹配表达式查找文件</td>
+<td>find . -name “*.c” -print</td>
+</tr>
+<tr>
+<td>file</td>
+<td>显示文件类型</td>
+<td>file filename</td>
+</tr>
+<tr>
+<td>open</td>
+<td>使用默认的程序打开文件</td>
+<td>open filename （open . 打开当前目录）</td>
+</tr>
+</tbody></table>
+<p><strong>系统Settings</strong></p>
+<table>
+<thead>
+<tr>
+<th>命令</th>
+<th>功能描述</th>
+<th>示例</th>
+</tr>
+</thead>
+</table>
+<table>
+<thead>
+<tr>
+<th>passwd</th>
+<th>修改用户密码</th>
+<th>passwd</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>chmod</td>
+<td>改变文件或目录的权限</td>
+<td>chmod ug+x filename</td>
+</tr>
+<tr>
+<td>umask</td>
+<td>定义创建文件的权限掩码</td>
+<td>umask 027</td>
+</tr>
+<tr>
+<td>chown</td>
+<td>改变文件或目录的属主</td>
+<td>chown newowner filename</td>
+</tr>
+<tr>
+<td>chgrp</td>
+<td>改变文件或目录的所属组</td>
+<td>chgrp staff filename</td>
+</tr>
+<tr>
+<td>xlock</td>
+<td>给终端上锁</td>
+<td>xlock -remote</td>
+</tr>
+</tbody></table>
+<p><strong>编程操作</strong></p>
+<hr>
+<table>
+<thead>
+<tr>
+<th>命令</th>
+<th>功能描述</th>
+<th>示例</th>
+</tr>
+</thead>
+</table>
+<table>
+<thead>
+<tr>
+<th>make</th>
+<th>维护可执行程序的最新版本</th>
+<th>make</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>touch</td>
+<td>更新文件的访问和修改时间</td>
+<td>touch -m 05202400 filename</td>
+</tr>
+<tr>
+<td>dbx</td>
+<td>命令行界面调试工具</td>
+<td>dbx a.out</td>
+</tr>
+<tr>
+<td>xde</td>
+<td>图形用户界面调试工具</td>
+<td>xde a.out</td>
+</tr>
+</tbody></table>
+<p><strong>进程操作</strong></p>
+<hr>
+<table>
+<thead>
+<tr>
+<th>命令</th>
+<th>功能描述</th>
+<th>示例</th>
+</tr>
+</thead>
+</table>
+<table>
+<thead>
+<tr>
+<th>ps</th>
+<th>显示进程当前状态</th>
+<th>ps u</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>kill</td>
+<td>终止进程</td>
+<td>kill -9 30142</td>
+</tr>
+<tr>
+<td>nice</td>
+<td>改变待执行命令的优先级</td>
+<td>nice cc -c *.c</td>
+</tr>
+<tr>
+<td>renice</td>
+<td>改变已运行进程的优先级</td>
+<td>renice +20 32768</td>
+</tr>
+</tbody></table>
+<p><strong>时间操作</strong></p>
+<hr>
+<table>
+<thead>
+<tr>
+<th>命令</th>
+<th>功能描述</th>
+<th>示例</th>
+</tr>
+</thead>
+</table>
+<table>
+<thead>
+<tr>
+<th>date</th>
+<th>显示系统的当前日期和时间</th>
+<th>date</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>cal</td>
+<td>显示日历</td>
+<td>cal 8 1996</td>
+</tr>
+<tr>
+<td>time</td>
+<td>统计程序的执行时间</td>
+<td>time a.out</td>
+</tr>
+</tbody></table>
+<p><strong>网络与通信操作</strong></p>
+<hr>
+<table>
+<thead>
+<tr>
+<th>命令</th>
+<th>功能描述</th>
+<th>示例</th>
+</tr>
+</thead>
+</table>
+<table>
+<thead>
+<tr>
+<th>telnet</th>
+<th>远程登录</th>
+<th>telnet <a href="https://link.zhihu.com/?target=http://www.macwk.com">http://www.macwk.com</a></th>
+</tr>
+</thead>
+<tbody><tr>
+<td>rlogin</td>
+<td>远程登录</td>
+<td>rlogin hostname -l username</td>
+</tr>
+<tr>
+<td>rsh</td>
+<td>在远程主机执行指定命令</td>
+<td>rsh f01n03 date</td>
+</tr>
+<tr>
+<td>ftp</td>
+<td>在本地主机与远程主机之间传输文件</td>
+<td>ftp <a href="https://link.zhihu.com/?target=http://ftp.macwk.com">http://ftp.macwk.com</a></td>
+</tr>
+<tr>
+<td>rcp</td>
+<td>在本地主机与远程主机 之间复制文件</td>
+<td>rcp file1 host1:file2</td>
+</tr>
+<tr>
+<td>ping</td>
+<td>给一个网络主机发送 回应请求</td>
+<td>ping <a href="https://link.zhihu.com/?target=http://www.macwk.com">http://www.macwk.com</a></td>
+</tr>
+<tr>
+<td>mail</td>
+<td>阅读和发送电子邮件</td>
+<td>mail</td>
+</tr>
+<tr>
+<td>write</td>
+<td>给另一用户发送报文</td>
+<td>write username pts&#x2F;1</td>
+</tr>
+<tr>
+<td>mesg</td>
+<td>允许或拒绝接收报文</td>
+<td>mesg n</td>
+</tr>
+</tbody></table>
+<p><strong>Korn Shell 命令</strong></p>
+<hr>
+<table>
+<thead>
+<tr>
+<th>命令</th>
+<th>功能描述</th>
+<th>示例</th>
+</tr>
+</thead>
+</table>
+<table>
+<thead>
+<tr>
+<th>history</th>
+<th>列出最近执行过的 几条命令及编号</th>
+<th>history</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>r</td>
+<td>重复执行最近执行过的 某条命令</td>
+<td>r -2</td>
+</tr>
+<tr>
+<td>alias</td>
+<td>给某个命令定义别名</td>
+<td>alias del&#x3D;rm -i</td>
+</tr>
+<tr>
+<td>unalias</td>
+<td>取消对某个别名的定义</td>
+<td>unalias del</td>
+</tr>
+</tbody></table>
+<p><strong>其它命令</strong></p>
+<hr>
+<table>
+<thead>
+<tr>
+<th>命令</th>
+<th>功能描述</th>
+<th>示例</th>
+</tr>
+</thead>
+</table>
+<table>
+<thead>
+<tr>
+<th>uname</th>
+<th>显示操作系统的有关信息</th>
+<th>uname -a</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>clear</td>
+<td>清除屏幕或窗口内容</td>
+<td>clear</td>
+</tr>
+<tr>
+<td>env</td>
+<td>显示当前所有设置过的环境变量</td>
+<td>env</td>
+</tr>
+<tr>
+<td>who</td>
+<td>列出当前登录的所有用户</td>
+<td>who</td>
+</tr>
+<tr>
+<td>whoami</td>
+<td>显示当前正进行操作的用户名</td>
+<td>whoami</td>
+</tr>
+<tr>
+<td>tty</td>
+<td>显示终端或伪终端的名称</td>
+<td>tty</td>
+</tr>
+<tr>
+<td>stty</td>
+<td>显示或重置控制键定义</td>
+<td>stty -a</td>
+</tr>
+<tr>
+<td>du</td>
+<td>查询磁盘使用情况</td>
+<td>du -k subdir</td>
+</tr>
+<tr>
+<td>df</td>
+<td>显示文件系统的总空间和可用空间</td>
+<td>df &#x2F;tmp</td>
+</tr>
+<tr>
+<td>w</td>
+<td>显示当前系统活动的总信息</td>
+<td>w</td>
+</tr>
+</tbody></table>
+<p>终端快捷键<br>可以阅读苹果官方一文：<a href="https://link.zhihu.com/?target=https://support.apple.com/zh-cn/guide/terminal/trmlshtcts/mac">Mac 上的”终端”键盘快捷键</a></p>
+<p>可以收藏一下，以免之后需要时找不到了。</p>
+
+        
+      </div>
+
+         
+    </div>
+    
+     
+  </div>
+  
+    
+<nav id="article-nav">
+  <a class="article-nav-btn left "
+    
+      href="/2026/04/04/15/"
+      title="Windows XP SP3后续更新集合（简中）"
+     >
+    <i class="fa-solid fa-angle-left"></i>
+    <p class="title-text">
+      
+        Windows XP SP3后续更新集合（简中）
+        
+    </p>
+  </a>
+  <a class="article-nav-btn right "
+    
+      href="/2026/04/04/13/"
+      title="Mac OS系统下制作ISO映像"
+     >
+
+    <p class="title-text">
+      
+        Mac OS系统下制作ISO映像
+        
+    </p>
+    <i class="fa-solid fa-angle-right"></i>
+  </a>
+</nav>
+
+
+  
+</article>
+
+
+
+
+  <script src="https://cdn.staticfile.org/twikoo/1.6.26/twikoo.all.min.js"></script>
+  <div id="comment-card" class="comment-card">
+    <div class="main-title-bar">
+      <div class="main-title-dot"></div>
+      <div class="main-title">留言 </div>
+    </div>
+    <div id="tcomment"></div>
+  </div>
+  <script>
+      twikoo.init({
+          envId: 'http://www.shizukuace.xyz:8081',
+          el: '#tcomment',
+          region: '',
+          path: 'location.pathname',
+          lang: 'zh-CN',
+      })
+  </script>
+  
+
+
+    </div>
+    <div id="footer-wrapper">
+      <footer id="footer">
+  
+  <div id="footer-info" class="inner">
+    
+    &copy; 2026 Shizuku<br>
+    Powered by <a href="https://hexo.io/" target="_blank">Hexo</a> & Theme <a target="_blank" rel="noopener" href="https://github.com/saicaca/hexo-theme-vivia">Vivia</a>
+  </div>
+</footer>
+
+    </div>
+    <div class="back-to-top-wrapper">
+    <button id="back-to-top-btn" class="back-to-top-btn hide" onclick="topFunction()">
+        <i class="fa-solid fa-angle-up"></i>
+    </button>
+</div>
+
+<script>
+    function topFunction() {
+        window.scroll({ top: 0, behavior: 'smooth' });
+    }
+    let btn = document.getElementById('back-to-top-btn');
+    function scrollFunction() {
+        if (document.body.scrollTop > 600 || document.documentElement.scrollTop > 600) {
+            btn.classList.remove('hide')
+        } else {
+            btn.classList.add('hide')
+        }
+    }
+    window.onscroll = function() {
+        scrollFunction();
+    }
+</script>
+
+  </div>
+  <script src="/js/light-dark-switch.js"></script>
+</body>
+</html>
