@@ -10,7 +10,30 @@
 <head>
   <meta charset="utf-8">
   
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=true"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'true');
+</script>
+<!-- End Google Analytics -->
+
   
+<!-- Global site tag (gtag.js) - Baidu Analytics -->
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?true";
+  var s = document.getElementsByTagName("script")[0];
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+<!-- End Baidu Analytics -->
+
   
 
   
@@ -120,7 +143,7 @@
     <div class="info">
       <div class="username">Shizuku </div>
       <div class="dot"></div>
-      <div class="subtitle">我这么美我不能死 </div>
+      <div class="subtitle"><a href="https://icp.gov.moe/?keyword=20260667" target="_blank">萌ICP备20260667号</a> </div>
       <div class="link-list">
         
           <a class="link-btn" target="_blank" rel="noopener" href="https://x.com/mikumemz?s=21" title="X"><i class="fa-brands fa-x-twitter"></i></a>
@@ -144,14 +167,14 @@
     <div class="widget">
       <h3 class="widget-title">分类</h3>
       <div class="category-box">
-            <a class="category-link" href="/categories/%E8%B5%84%E6%BA%90/">
-                资源
-                <div class="category-count">16</div>
-            </a>
-        
             <a class="category-link" href="/categories/%E6%8A%80%E6%9C%AF/">
                 技术
                 <div class="category-count">6</div>
+            </a>
+        
+            <a class="category-link" href="/categories/%E8%B5%84%E6%BA%90/">
+                资源
+                <div class="category-count">16</div>
             </a>
         
             <a class="category-link" href="/categories/%E6%97%A5%E8%AE%B0/">
@@ -274,7 +297,7 @@
   
           </div>
           <div class="wordcount need-seperator meta-info">
-            5.2k 词 
+            5.1k 词 
           </div>
         </div>
         
@@ -285,7 +308,7 @@
         
           <div class="truncate-text">
             
-              iMac 机型 2009 – 2025年机型列表大全和技术规格下面按照推出年份列出了各个 iMac 机型，其中最新机型显示在最上面。点按机型名称可获取详细技术规格或查看使用手册。
+              下面按照推出年份列出了各个 iMac 机型，其中最新机型显示在最上面。点按机型名称可获取详细技术规格或查看使用手册。
 2024 年
 
 iMac（24 英寸，2024 年，四个端口）
@@ -301,7 +324,7 @@ iMac（24 英寸，2023 年）
 端口：两个雷雳&#x2F;USB 4 端口，两个 USB 3 端口
 颜色：银色、粉色、蓝色、绿色、紫色、橙色、黄色
 机型标识符：Mac15,5
-部件号：MQRJ3xx&#x2F;A、MQRK3xx&#x2F;A、MQRL3xx&#x2F;A、MQRM3xx&#x2F;A、MQRN3xx&#x2F;A、MQRP3xx&#x2F;A、MQRQ3xx&#x2F;A、M...
+部件号：MQRJ3xx&#x2F;A、MQRK3xx&#x2F;A、MQRL3xx&#x2F;A、MQRM3xx&#x2F;A、MQRN3xx&#x2F;A、MQRP3xx&#x2F;A、MQRQ3xx&#x2F;A、MQRR3xx&#x2F;A、MQRT3xx&#x2F;A、MQ...
             
           </div>
         
@@ -610,11 +633,15 @@ iMac（24 英寸，2023 年）
 2019-10-09技术杂谈5 分钟读完 (大约758个字)最近在浏览别人博客时，一个萌物给了我意外的惊喜，原来博客还可以这么玩
 
 
-于是果断审查元素，发现这个萌萌哒的看板娘背后使用的是一个叫 live2d 的技术，并且凭借 Google 迅速找到对应的开源代码：https://github.com/xiazeyu/live2d-widget.js，https://github.com/EYHN/hexo-helper-live2d
-你可以在我的博客中先目睹下它的实际效果：https://www.cnkirito.moe/，点击会有音效哦~
+于是果断审查元素，发现这个萌萌哒的看板娘背后使用的是一个叫 live2d 的技术，并且凭借 Google 迅速找到对应的开源代码：
+
+https://github.com/xiazeyu/live2d-widget.js
+https://github.com/EYHN/hexo-helper-live2d
+
+你可以在博客中先目睹下它的实际效果：https://www.cnkirito.moe/，点击会有音效哦~
 在浏览 live2-widget.js 的说明文档时，发现它对 hexo 的支持非常友好，恰好我的博客是通过 hexo 搭建的，所以本文会介绍一下如何为 hexo 集成一只看板娘。
 安装使用 npm 在 hexo 下安装 hexo-helper-live2d，它将 live2d-widget.js 与 hexo 进行了整合，使得我们只需要通过简单的配置，即可生效
-1npm install --save h...
+1npm install --save ...
             
           </div>
         
