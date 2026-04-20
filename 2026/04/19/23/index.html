@@ -37,31 +37,54 @@ var _hmt = _hmt || [];
   
 
   
-  <title>PE系统工具大全 | Shizuku Blogs</title>
+  <title>OpenCore Legacy Patcher--旧Mac电脑安装新macOS系统初阶教程 | Shizuku Blogs</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
   <link rel="preload" href="/css/fonts/Roboto-Regular.ttf" as="font" type="font/ttf" crossorigin="anonymous">
   <link rel="preload" href="/css/fonts/Roboto-Bold.ttf" as="font" type="font/ttf" crossorigin="anonymous">
 
-  <meta name="description" content="这里总结了市面上常见的PE工具以及本站的直链下载 Top1：FirPE无可置疑的王者，无广告，多年如一   点击下载最稳定版本v1.9.2（10PE+2003PE）Clickhere 最新版本v2.1.1（11PE+2003PE）Clickhere 这里是2.1.1版本的ISO：Clickhere 衍生商业定制版优捷易（Plus版本）   Clickhere Top2:U启通（EasyU） 点击下">
+  <meta name="description" content="本文主要介绍如何使用 OpenCore Legacy Patcher 将你的老旧电脑升级到你想要升级的 macOS 系统版本的应用程序，它能够绕开 Apple 对于老旧电脑无法升级系统版本的限制，让你能够升级到 macOS Sequoia、macOS Sonoma、macOS Ventura、macOS Monterey 和 macOS Big Sur，哪怕是最新版的 macOS Tahoe">
 <meta property="og:type" content="article">
-<meta property="og:title" content="PE系统工具大全">
-<meta property="og:url" content="http://example.com/2026/03/24/4/index.html">
+<meta property="og:title" content="OpenCore Legacy Patcher--旧Mac电脑安装新macOS系统初阶教程">
+<meta property="og:url" content="http://example.com/2026/04/19/23/index.html">
 <meta property="og:site_name" content="Shizuku Blogs">
-<meta property="og:description" content="这里总结了市面上常见的PE工具以及本站的直链下载 Top1：FirPE无可置疑的王者，无广告，多年如一   点击下载最稳定版本v1.9.2（10PE+2003PE）Clickhere 最新版本v2.1.1（11PE+2003PE）Clickhere 这里是2.1.1版本的ISO：Clickhere 衍生商业定制版优捷易（Plus版本）   Clickhere Top2:U启通（EasyU） 点击下">
+<meta property="og:description" content="本文主要介绍如何使用 OpenCore Legacy Patcher 将你的老旧电脑升级到你想要升级的 macOS 系统版本的应用程序，它能够绕开 Apple 对于老旧电脑无法升级系统版本的限制，让你能够升级到 macOS Sequoia、macOS Sonoma、macOS Ventura、macOS Monterey 和 macOS Big Sur，哪怕是最新版的 macOS Tahoe">
 <meta property="og:locale" content="zh_CN">
-<meta property="og:image" content="https://firpe-team.github.io/FirPE-Docs/assets/make_disk.DjYj4uAO.gif">
-<meta property="og:image" content="https://www.51cxsoft.com/wp-content/uploads/2024/07/Windows-10-x64-2025-04-29-15-55-02.png">
-<meta property="og:image" content="https://img.itsk.com/attachment/202401/16/ddaed31d548f3f7849f925c2a02971f9.png">
-<meta property="og:image" content="https://picx.zhimg.com/v2-479e2cb60e91552bac8abc7fe6002eeb_1440w.jpg">
-<meta property="og:image" content="https://www.ventoy.net/static/img/screen/screen_uefi_cn.png?v=4">
-<meta property="article:published_time" content="2026-03-24T05:17:27.000Z">
-<meta property="article:modified_time" content="2026-04-20T09:19:54.017Z">
+<meta property="og:image" content="https://picx.zhimg.com/70/v2-b6654b78f81918d558ceff4fb34e68f6_1440w.avis?source=172ae18b&biz_tag=Post">
+<meta property="og:image" content="https://pic2.zhimg.com/v2-f3d114c6835d15c426f6ecb56f6f62fb_1440w.jpg">
+<meta property="og:image" content="https://pic2.zhimg.com/v2-92559ec2882d92a4d6941edb5349a37b_1440w.jpg">
+<meta property="og:image" content="https://pic2.zhimg.com/v2-8672a7ea14fe8428e99e72e093bad89f_1440w.jpg">
+<meta property="og:image" content="https://picx.zhimg.com/v2-02911d36356462da3d8d8d8252b47b07_1440w.jpg">
+<meta property="og:image" content="https://pic4.zhimg.com/v2-d797f695dd620a946ad5187f3581887f_1440w.jpg">
+<meta property="og:image" content="https://pic2.zhimg.com/v2-8672a7ea14fe8428e99e72e093bad89f_1440w.jpg">
+<meta property="og:image" content="https://pica.zhimg.com/v2-95a7e27926b4da743160d82c9b5c936a_1440w.jpg">
+<meta property="og:image" content="https://pic4.zhimg.com/v2-eefab0a39d1d02ab6d79c459fb157b49_1440w.jpg">
+<meta property="og:image" content="https://pic3.zhimg.com/v2-a220b880a980e8482de98833d41659b4_1440w.jpg">
+<meta property="og:image" content="https://pic2.zhimg.com/v2-c5b095d8d2499fae141ebaa8f6ec6259_1440w.jpg">
+<meta property="og:image" content="https://pic4.zhimg.com/v2-c8842fd02c38a32225505d68323beda3_1440w.jpg">
+<meta property="og:image" content="https://pic3.zhimg.com/v2-870eb34ca322a522e3a66226a54f5462_1440w.jpg">
+<meta property="og:image" content="https://pic3.zhimg.com/v2-0f526639b52cee9a6856ece831323396_1440w.jpg">
+<meta property="og:image" content="https://picx.zhimg.com/v2-50011c5fc5e53f0b88f8d1b7bfc0d1f3_1440w.jpg">
+<meta property="og:image" content="https://pic1.zhimg.com/v2-6d598404a201eb5b865eefe2eae99786_1440w.jpg">
+<meta property="og:image" content="https://pic3.zhimg.com/v2-91c2f248566f9d986db382ec47a214b2_1440w.jpg">
+<meta property="og:image" content="https://pic4.zhimg.com/v2-187e759bac955271bb7210ac5c6bedf7_1440w.jpg">
+<meta property="og:image" content="https://pic1.zhimg.com/v2-b8527a9baf925ce6f8082a3cf5fb282a_1440w.jpg">
+<meta property="og:image" content="https://pic4.zhimg.com/v2-7bb544930369bc6ef00d2dcf4fb1bdfb_1440w.jpg">
+<meta property="og:image" content="https://picx.zhimg.com/v2-4f4bbb05ccf04b94b8e604c7807d1537_1440w.jpg">
+<meta property="og:image" content="https://pic3.zhimg.com/v2-870eb34ca322a522e3a66226a54f5462_1440w.jpg">
+<meta property="og:image" content="https://pic3.zhimg.com/v2-0f526639b52cee9a6856ece831323396_1440w.jpg">
+<meta property="og:image" content="https://pic1.zhimg.com/v2-41fc32a4c8ca2f700c89879068c49c3e_1440w.jpg">
+<meta property="og:image" content="https://pic4.zhimg.com/v2-b5490c1365f2b5560e56ba6150584bdf_1440w.jpg">
+<meta property="og:image" content="https://pic4.zhimg.com/v2-ab34a7ccfba00c3d55a1ec8fbf6926c1_1440w.jpg">
+<meta property="og:image" content="https://pica.zhimg.com/v2-b03bf0e3ee3205a79e531f400704c4f8_1440w.jpg">
+<meta property="og:image" content="https://pic3.zhimg.com/v2-4c8592a84b890ab7d365dff0bb6ed6e0_1440w.jpg">
+<meta property="article:published_time" content="2026-04-19T10:55:09.000Z">
+<meta property="article:modified_time" content="2026-04-19T11:13:45.873Z">
 <meta property="article:author" content="Shizuku">
-<meta property="article:tag" content="PE">
-<meta property="article:tag" content="iso">
+<meta property="article:tag" content="MacOS">
+<meta property="article:tag" content="技术">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:image" content="https://firpe-team.github.io/FirPE-Docs/assets/make_disk.DjYj4uAO.gif">
+<meta name="twitter:image" content="https://picx.zhimg.com/70/v2-b6654b78f81918d558ceff4fb34e68f6_1440w.avis?source=172ae18b&biz_tag=Post">
   
   
     <link rel="shortcut icon" href="/img/1.ico">
@@ -280,7 +303,7 @@ var _hmt = _hmt || [];
        
 
 
-<article id="post-4" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
+<article id="post-23" class="h-entry article article-type-post" itemprop="blogPost" itemscope itemtype="https://schema.org/BlogPosting">
   
     
    
@@ -293,7 +316,7 @@ var _hmt = _hmt || [];
   
     
       <h1 class="p-name article-title" itemprop="headline name">
-        PE系统工具大全
+        OpenCore Legacy Patcher--旧Mac电脑安装新macOS系统初阶教程
       </h1>
     
   
@@ -301,49 +324,107 @@ var _hmt = _hmt || [];
 
         <div class='meta-info-bar'>
           <div class="meta-info">
-  <time class="dt-published" datetime="2026-03-24T05:17:27.000Z" itemprop="datePublished">2026-03-24</time>
+  <time class="dt-published" datetime="2026-04-19T10:55:09.000Z" itemprop="datePublished">2026-04-19</time>
 </div>
           <div class="need-seperator meta-info">
             <div class="meta-cate-flex">
   
-  <a class="meta-cate-link" href="/categories/%E8%B5%84%E6%BA%90/">资源</a>
+  <a class="meta-cate-link" href="/categories/%E6%8A%80%E6%9C%AF/">技术</a>
    
 </div>
   
           </div>
           <div class="wordcount need-seperator meta-info">
-            419 词 
+            2.4k 词 
           </div>
         </div>
         
-  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/PE/" rel="tag">PE</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/iso/" rel="tag">iso</a></li></ul>
+  <ul class="article-tag-list" itemprop="keywords"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/MacOS/" rel="tag">MacOS</a></li><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/%E6%8A%80%E6%9C%AF/" rel="tag">技术</a></li></ul>
 
       </header>
       <div class="e-content article-entry" itemprop="articleBody">
         
-          <p>这里总结了市面上常见的PE工具以及本站的直链下载</p>
-<p>Top1：FirPE<br>无可置疑的王者，无广告，多年如一</p>
-<img src="https://firpe-team.github.io/FirPE-Docs/assets/make_disk.DjYj4uAO.gif">
+          <img src="https://picx.zhimg.com/70/v2-b6654b78f81918d558ceff4fb34e68f6_1440w.avis?source=172ae18b&biz_tag=Post">
 
-<p>点击下载最稳定版本v1.9.2（10PE+2003PE）<br><a target="_blank" rel="noopener" href="http://www.shizukuace.xyz:5244/d/HDD%201TB/3%20PE%E5%B7%A5%E5%85%B7/FirPE-V1.9.2-250307.exe?sign=gBZEji1sUUD6pG0saKjEx-ARFvyI9clLFxXpCr26cpM=:0">Clickhere</a></p>
-<p>最新版本v2.1.1（11PE+2003PE）<br><a target="_blank" rel="noopener" href="http://www.shizukuace.xyz:5244/d/HDD%201TB/3%20PE%E5%B7%A5%E5%85%B7/FirPE-V2.1.1.exe?sign=FverAcX5FuHOBpBdYBY2L0xaVfa6JbA4U8GXVGgmYTY=:0">Clickhere</a></p>
-<p>这里是2.1.1版本的ISO：<br><a target="_blank" rel="noopener" href="http://www.shizukuace.xyz:5244/d/HDD%201TB/8%20%E7%B3%BB%E7%BB%9F%E9%95%9C%E5%83%8F/WePE_64_V2.3.iso?sign=iXpaqS-ezXi24Apz92LFemHvly_ncgCU_0gfiOrD23E=:0">Clickhere</a></p>
-<p>衍生商业定制版优捷易（Plus版本）</p>
-<img src="https://www.51cxsoft.com/wp-content/uploads/2024/07/Windows-10-x64-2025-04-29-15-55-02.png">
+<p><strong>本文主要介绍如何使用 OpenCore Legacy Patcher 将你的老旧电脑升级到你想要升级的 macOS 系统版本的应用程序，它能够绕开 Apple 对于老旧电脑无法升级系统版本的限制，让你能够升级到 macOS Sequoia、macOS Sonoma、macOS Ventura、macOS Monterey 和 macOS Big Sur，哪怕是最新版的 macOS Tahoe 26 系统都可以升级</strong></p>
+<p>升级系统前，先备份好电脑内的重要资料，然后按以下升级教程操作：</p>
+<p>1、找一个大于 16 GB 的U盘&#x2F;移动硬盘（也可以不准备，凭运气），将里面的数据备份，然后电脑内搜索 磁盘工具 并打开，选择你的U盘&#x2F;移动硬盘后点击*<em>抹掉</em>按钮；</p>
+<img src="https://pic2.zhimg.com/v2-f3d114c6835d15c426f6ecb56f6f62fb_1440w.jpg">
 
-<p><a target="_blank" rel="noopener" href="http://www.shizukuace.xyz:5244/HDD%20500G/3%20PE%E5%B7%A5%E5%85%B7/%E4%BC%98%E6%8D%B7%E6%98%93PE%E7%BB%B4%E6%8A%A4%E7%B3%BB%E7%BB%9F_Plus%E7%89%88V1.10.01.01">Clickhere</a></p>
-<p>Top2:U启通（EasyU）<br><img src="https://img.itsk.com/attachment/202401/16/ddaed31d548f3f7849f925c2a02971f9.png"></p>
-<p>点击下载<br><a target="_blank" rel="noopener" href="http://www.shizukuace.xyz:5244/HDD%201TB/3%20PE%E5%B7%A5%E5%85%B7/EasyU_3.7.2025.0326">Clickhere</a></p>
-<p><a target="_blank" rel="noopener" href="https://www.itsk.com/goto?name=eu_3.7.2023.1206_wy">微云</a></p>
-<p><a target="_blank" rel="noopener" href="https://www.itsk.com/goto?name=eu_3.7.2023.1206_bd">BaiduNetdisk</a></p>
-<p>Top3:微PE（WEPE）<br><img src="https://picx.zhimg.com/v2-479e2cb60e91552bac8abc7fe6002eeb_1440w.jpg"><br>垃圾电脑的守护神，可惜没有一键安装，吃操作，胜在纯净和微型</p>
-<p>点击下载32Bit<br><a target="_blank" rel="noopener" href="http://www.shizukuace.xyz:5244/d/HDD%201TB/3%20PE%E5%B7%A5%E5%85%B7/WePE_32_V1.3.exe?sign=6s60a5OAUfGH9IDsZjq87BZb5Eyi17Eole8er-V6-Gg=:0">Clickhere</a></p>
-<p>点击下载64Bit<br><a target="_blank" rel="noopener" href="http://www.shizukuace.xyz:5244/d/HDD%201TB/3%20PE%E5%B7%A5%E5%85%B7/WePE_64_V2.3.exe?sign=6dXzzyOBxJAvmchh9sX7rYN33dJ8afRxPFzbx1MI-S8=:0">Clickhere</a></p>
-<p>Top：？？？<br><img src="https://www.ventoy.net/static/img/screen/screen_uefi_cn.png?v=4"><br>秒天秒地秒一切<br>横空出世————<strong>神器Ventoy</strong><br>只要把iso拖进去就ok</p>
-<p>最新版本点击下载<br><a target="_blank" rel="noopener" href="http://www.shizukuace.xyz:5244/d/HDD%201TB/3%20PE%E5%B7%A5%E5%85%B7/ventoy-1.1.07-windows.zip?sign=B9eFkH0r1SAWmNkIdidU6TyF-oC2oUfLW6JRca3zlzc=:0">Clickhere</a></p>
-<p>官网蓝奏云：<a target="_blank" rel="noopener" href="https://www.lanzoui.com/b01bd54gb">https://www.lanzoui.com/b01bd54gb</a></p>
-<p>正版软件资源库（iso为主）<br><a target="_blank" rel="noopener" href="http://www.shizukuace.xyz:5244/">Clickhere</a></p>
-<p>感谢光临本站！</p>
+<p>2、选择 FAT 格式然后点击 抹掉 即可；</p>
+<img src="https://pic2.zhimg.com/v2-92559ec2882d92a4d6941edb5349a37b_1440w.jpg">
+
+<p>3、下载 <a target="_blank" rel="noopener" href="https://github.com/dortania/OpenCore-Legacy-Patcher/releases/download/2.4.1/OpenCore-Patcher.pkg">OpenCore Legacy Patcher</a> 安装并打开软件，点击 <strong>下载 macOS</strong> 系统</p>
+<img src="https://pic2.zhimg.com/v2-8672a7ea14fe8428e99e72e093bad89f_1440w.jpg">
+
+<p>4、点击 Download macOS installer 按钮；</p>
+<img src="https://picx.zhimg.com/v2-02911d36356462da3d8d8d8252b47b07_1440w.jpg">
+
+<p>5、选择你想要更新的系统版本，然后点击 <strong>Download</strong> 开始下载 macOS 系统（**避坑建议：**先选择 macOS 13 系统下载安装，后期需要升级新系统的话可以直接通过 macOS 的 <strong>更新系统</strong> 来升级）；</p>
+<p><img src="https://pic4.zhimg.com/v2-d797f695dd620a946ad5187f3581887f_1440w.jpg"></p>
+<p>6、macOS 系统下载完后 点击底部 <strong>Return to Main Menu</strong> 返回 <a href="https://link.zhihu.com/?target=https://www.apppvp.com/macos/opencore-patcher-for-mac.html">OpenCore Patcher</a> 主界面，然后点击 <strong>Create macOS Installer</strong> 按钮；</p>
+<p><img src="https://pic2.zhimg.com/v2-8672a7ea14fe8428e99e72e093bad89f_1440w.jpg"></p>
+<p>7、点击 <strong>Use existing macOS Installer</strong> 按钮；</p>
+<p><img src="https://pica.zhimg.com/v2-95a7e27926b4da743160d82c9b5c936a_1440w.jpg"></p>
+<p>8、选择下载好的 macOS 系统；</p>
+<p><img src="https://pic4.zhimg.com/v2-eefab0a39d1d02ab6d79c459fb157b49_1440w.jpg"></p>
+<p>9、选择你的 U盘&#x2F;移动硬盘；</p>
+<p><img src="https://pic3.zhimg.com/v2-a220b880a980e8482de98833d41659b4_1440w.jpg"></p>
+<p>10、提示擦除你的 <strong>U盘或移动</strong> 硬盘弹窗后点击 <strong>Yes</strong> 按钮；</p>
+<p><img src="https://pic2.zhimg.com/v2-c5b095d8d2499fae141ebaa8f6ec6259_1440w.jpg"></p>
+<p>11、等待创建系统盘进度完成；</p>
+<p><img src="https://pic4.zhimg.com/v2-c8842fd02c38a32225505d68323beda3_1440w.jpg"></p>
+<p>12、点击底部 <strong>Return to Main Menu</strong> 返回 OpenCore Patcher 主界面，然后点击 <strong>build and Install OpenCore</strong> 按钮；</p>
+<p><img src="https://pic3.zhimg.com/v2-870eb34ca322a522e3a66226a54f5462_1440w.jpg"></p>
+<p>13、显示完成构建配置后点击 <strong>Install to disk</strong> 蓝色按钮；</p>
+<p><img src="https://pic3.zhimg.com/v2-0f526639b52cee9a6856ece831323396_1440w.jpg"></p>
+<p>14、这里选择你刚刚格式化的FAT格式U盘&#x2F;移动硬盘；</p>
+<p><img src="https://picx.zhimg.com/v2-50011c5fc5e53f0b88f8d1b7bfc0d1f3_1440w.jpg"></p>
+<p>15、点击 <strong>EFI - XXX M</strong>B 蓝色按钮；</p>
+<p><img src="https://pic1.zhimg.com/v2-6d598404a201eb5b865eefe2eae99786_1440w.jpg"></p>
+<p>16、这里注意，如果你用的不是老 Mac 电脑创建的 <a target="_blank" rel="noopener" href="https://zhida.zhihu.com/search?content_id=264660660&content_type=Article&match_order=1&q=EFI+%E5%90%AF%E5%8A%A8%E7%9B%98&zd_token=eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJ6aGlkYV9zZXJ2ZXIiLCJleHAiOjE3NzY3Njg3NzQsInEiOiJFRkkg5ZCv5Yqo55uYIiwiemhpZGFfc291cmNlIjoiZW50aXR5IiwiY29udGVudF9pZCI6MjY0NjYwNjYwLCJjb250ZW50X3R5cGUiOiJBcnRpY2xlIiwibWF0Y2hfb3JkZXIiOjEsInpkX3Rva2VuIjpudWxsfQ.yy5FafH3F2ff5FXLPL26RsQNpmuCKEoUkrKbLI9ZaBg&zhida_source=entity">EFI 启动盘</a>的话，会出现下图弹窗（直接在老Mac电脑上创建的话会自动识别你电脑的机型），点击 OK 后再点击 <strong>Return to Main Menu</strong> 按钮返回主界面，然后再点击主界面下面的 <strong>Settings</strong> 按钮进行设置；</p>
+<p><img src="https://pic3.zhimg.com/v2-91c2f248566f9d986db382ec47a214b2_1440w.jpg"></p>
+<p>17、这里根据你电脑的机型选择对应的版本号；</p>
+<p><img src="https://pic4.zhimg.com/v2-187e759bac955271bb7210ac5c6bedf7_1440w.jpg"></p>
+<p>不知道如何选择的话 <strong><a target="_blank" rel="noopener" href="https://support.apple.com/zh-cn/102767">【点击这里查看】</a></strong> 如何查找 Mac 机型名称和序列号！</p>
+<p><img src="https://pic1.zhimg.com/v2-b8527a9baf925ce6f8082a3cf5fb282a_1440w.jpg"></p>
+<p>18、选择好型号后重复第 12 步即可，然后重启电脑（不是在老 Mac 电脑上制作启动盘的话，将制作好的 U盘&#x2F;移动硬盘 插到需要更新系统的老 Mac 电脑上），重启电脑过程中按住 Option (⌥) 键，进入启动管理器后选择 U 盘（显示为 “EFI Boot”），进入引导菜单，在菜单中选择你的 macOS 安装盘（显示为 “Install macOS [版本名]“）按回车键，选择安装目标磁盘（建议是一个空白分区或专门的硬盘，硬盘格式为 APFS 或 Mac OS 扩展，内置系统盘必须 APFS 格式），然后按提示更新系统即可；</p>
+<p><img src="https://pic4.zhimg.com/v2-7bb544930369bc6ef00d2dcf4fb1bdfb_1440w.jpg"></p>
+<p>19、系统更新完后重新下载 <a target="_blank" rel="noopener" href="https://github.com/dortania/OpenCore-Legacy-Patcher/releases/download/2.4.1/OpenCore-Patcher.pkg">OpenCore Legacy Patcher</a> 打开，点击 <strong>Post-Install Root Patch</strong> 按钮开始修复驱动，有些驱动（如 Wi-Fi、显卡等驱动）更新系统后可能无法正常使用，需要用 OpenCore 打补丁修复一下。</p>
+<p><img src="https://picx.zhimg.com/v2-4f4bbb05ccf04b94b8e604c7807d1537_1440w.jpg"></p>
+<p>20、修复完成后，重启一下电脑，确保所有功能正常使用后，设置 OpenCore 为默认启动项安装到内置硬盘，点击 <strong>build and Install OpenCore</strong> 按钮；</p>
+<p><img src="https://pic3.zhimg.com/v2-870eb34ca322a522e3a66226a54f5462_1440w.jpg"></p>
+<p>再点击 <strong>Install to disk</strong> 蓝色按钮，然后将 OpenCore Legacy Patcher 安装到内置硬盘，重启电脑后大功告成！</p>
+<p><img src="https://pic3.zhimg.com/v2-0f526639b52cee9a6856ece831323396_1440w.jpg"></p>
+<p><strong>重要的事情</strong></p>
+<p>很多朋友在安装旧版苹果系统时会遇到”应用程序副本已损坏”的问题，大部分原因是由于系统版本证书过期所致。我们可以这样操作，解决上述问题。</p>
+<p><img src="https://pic1.zhimg.com/v2-41fc32a4c8ca2f700c89879068c49c3e_1440w.jpg"></p>
+<p>先点击”好”关闭窗口，我们先<strong>关闭网络，关闭网络，关闭网络</strong>（断开wifi，拔网线等），在准备安装界面中点击工具栏”实用工具”—“终端”，进入终端</p>
+<p><img src="https://pic4.zhimg.com/v2-b5490c1365f2b5560e56ba6150584bdf_1440w.jpg"></p>
+<p>进入终端后，我们输入以下命令行”date 062614102014.30”，注意，date后面是空格，输完之后按回车确定。(其他版本日期参照教程结尾)</p>
+<p><img src="https://pic4.zhimg.com/v2-ab34a7ccfba00c3d55a1ec8fbf6926c1_1440w.jpg"></p>
+<p>命令行输完之后，关闭窗口，退出终端。</p>
+<p><img src="https://pica.zhimg.com/v2-b03bf0e3ee3205a79e531f400704c4f8_1440w.jpg"></p>
+<p>退出之后，我们点击”安装macOS”，看一下能否进下一步。</p>
+<p><img src="https://pic3.zhimg.com/v2-4c8592a84b890ab7d365dff0bb6ed6e0_1440w.jpg"></p>
+<p>我们顺利得进入了安装界面。</p>
+<p>其他事项</p>
+<p>一、在<strong>桌面环境</strong>升级系统时，同样先关闭网络，打开”终端”，输入日期前加入”sudo”，例如”sudo date 062614102014.30”（不包括引号），按回车，关闭终端之后再执行升级操作。</p>
+<p>二、如果上面的命令行不起作用。我们可以更改成其他日期再试一遍</p>
+<p>*<em>日期格式解析：”091400002022”代表2022年9月14日0点发布，所以需更改成对应版本的发布日期方可安装！</em></p>
+<p><strong>date 091400002022.00 (macOS Monterey 12.6)</strong></p>
+<p><strong>date 082000002022.00 (macOS Monterey 12.5.1)</strong></p>
+<p><strong>date 072100002022.00 (macOS Monterey 12.5)</strong></p>
+<p><strong>date 032900002023.00 (macOS Ventura 13.3)</strong></p>
+<p><strong>date 030400002021.00（macOS Big Sur）</strong></p>
+<p><strong>date 0201010116（OS X El Capitan 10.11.6适用）</strong></p>
+<p><strong>date 010514102017.30（macOS Sierra 10.12适用）</strong></p>
+<p><strong>date 062614102014.30 （10.13、10.14适用）</strong></p>
+<p><strong>date 121212122019 （10.15）</strong></p>
+<p><strong>date 0923222120 （10.15）</strong></p>
+<p><strong>date 032208102015.20</strong></p>
+<p><strong>date 112202022015</strong></p>
+<p><strong>date 122014102015.30（10.10可用）</strong></p>
 
         
       </div>
@@ -358,25 +439,25 @@ var _hmt = _hmt || [];
 <nav id="article-nav">
   <a class="article-nav-btn left "
     
-      href="/2026/03/24/5/"
-      title="Parallels Desktop 26.1.1 虚拟机软件"
+      href="/2026/04/19/24/"
+      title="在不受支持的 Mac 上安装 macOS Sequoia - 进阶版"
      >
     <i class="fa-solid fa-angle-left"></i>
     <p class="title-text">
       
-        Parallels Desktop 26.1.1 虚拟机软件
+        在不受支持的 Mac 上安装 macOS Sequoia - 进阶版
         
     </p>
   </a>
   <a class="article-nav-btn right "
     
-      href="/2026/03/24/3/"
-      title="U盘越狱工具checkn1x更新发布1.1.7，支持iOS14.7 Beta版"
+      href="/2026/04/09/22/"
+      title="iMac 机型 2009 -- 2024年机型列表大全和技术规格"
      >
 
     <p class="title-text">
       
-        U盘越狱工具checkn1x更新发布1.1.7，支持iOS14.7 Beta版
+        iMac 机型 2009 -- 2024年机型列表大全和技术规格
         
     </p>
     <i class="fa-solid fa-angle-right"></i>
